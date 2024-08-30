@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import Navbar from '../navbar/Navbar';
+
 import Logo from '../logo/Logo';
 
 // eslint-disable-next-line react/prop-types
@@ -18,11 +18,7 @@ const Header = ({ loginCSS, signupCSS, navColor, light }) => {
           <Logo light={light} />
           {/* Header Logo */}
           {/* Header Navigation */}
-          <Navbar
-            mobileMenu={mobileMenu}
-            setMobileMenu={setMobileMenu}
-            color={navColor}
-          />
+        
           {/* Header Navigation */}
           {/* Header User Event */}
           <div className='flex items-center gap-6'>
