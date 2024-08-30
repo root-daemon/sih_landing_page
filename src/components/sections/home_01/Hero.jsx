@@ -9,7 +9,7 @@ const Hero = () => {
           <div className="global-container">
             <div className="mb-14 flex flex-col items-center text-center lg:mb-20">
               <h1 className="jos slide-from-bottom mb-6 max-w-[510px] lg:max-w-[768px] xl:max-w-[1076px] text-8xl">
-                Together We Build: India's Infrastructure Revolution{" "}
+                India's Infrastructure Revolution{" "}
               </h1>
               <p className="jos slide-from-bottom mb-11 max-w-[700px] text-lg font-semibold sm:text-xl xl:max-w-[980px]">
                 From Plans to Progress: Unified Action for India's Infrastructure Growth- Transform ideas into
@@ -30,9 +30,9 @@ const Hero = () => {
                 </Link>
               </div>
             </div>
-            <div className="jos hero-img overflow-hidden rounded-2xl bg-black" data-jos_animation="zoom">
+            <div className="jos hero-img overflow-hidden rounded-xl bg-black shadow-lg" data-jos_animation="zoom">
               <img
-                src="assets/img/th-1/hero-dashboard.jpg"
+                src="assets/img/th-1/heroo.png"
                 alt="hero-dashboard"
                 width="1296"
                 height="640"
