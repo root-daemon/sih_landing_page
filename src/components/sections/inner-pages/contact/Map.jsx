@@ -2,7 +2,7 @@ const Map = () => {
   return (
     <section className="map-section">
       {/* Section Spacer */}
-      <div className="bg-black pb-40 pt-20 xl:pb-[200px] xl:pt-[130px]">
+      <div className="bg-[#191919] pb-40 pt-20 xl:pb-[200px] xl:pt-[130px]">
         {/* Section Container */}
         <div className="global-container">
           {/* Section Content Block */}

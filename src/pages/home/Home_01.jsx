@@ -5,6 +5,7 @@ import Content_02 from "../../components/sections/home_01/Content_02";
 import FunFact from "../../components/sections/home_01/FunFact";
 
 import Map from "./../../components/sections/inner-pages/contact/Map";
+import Integrates from "./../../components/sections/home_02/Integrates";
 
 const Home_01 = () => {
   return (
@@ -12,6 +13,9 @@ const Home_01 = () => {
       <Hero />
       <Service />
       <Map />
+
+      <Integrates />
+
       <Content_01 />
       <Content_02 />
       <FunFact />

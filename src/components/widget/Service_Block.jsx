@@ -15,9 +15,7 @@ const Service_Block = ({ icon_black, icon_orange, title, text }) => {
         />
       </div>
       <h3 className="mb-4 block text-xl leading-tight -tracking-[0.5px] group-hover:text-white xl:text-2xl xxl:text-[28px]">
-        <Link to="/service-details" className="hover:text-colorOrangyRed">
-          {title}
-        </Link>
+        {title}
       </h3>
       <p className="mb-12 duration-300 group-hover:text-white">{text}</p>
     </li>
