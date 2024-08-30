@@ -9,9 +9,12 @@ const Content_01 = () => {
           <div className="global-container">
             <div className="grid grid-cols-1 items-center gap-12 md:grid-cols-2 lg:gap-20 xl:gap-28 xxl:gap-32">
               {/* Content Left Block */}
-              <div className="jos order-2 overflow-hidden rounded-md md:order-1" data-jos_animation="fade-left">
+              <div
+                className="jos order-2 overflow-hidden rounded-lg shadow-xl md:order-1"
+                data-jos_animation="fade-left"
+              >
                 <img
-                  src="assets/img/th-1/content-image-1.jpg"
+                  src="assets/img/map.jpeg"
                   alt="content-image-1"
                   width="526"
                   height="450"
@@ -20,7 +23,10 @@ const Content_01 = () => {
               </div>
               {/* Content Left Block */}
               {/* Content Right Block */}
-              <div className="jos order-1 md:order-2" data-jos_animation="fade-right">
+              <div
+                className="jos order-1 md:order-2"
+                data-jos_animation="fade-right"
+              >
                 {/* Section Content Block */}
                 <div className="mb-6">
                   <h2>Accessible to a wider audience</h2>
@@ -28,12 +34,14 @@ const Content_01 = () => {
                 {/* Section Content Block */}
                 <div className="text-lg leading-[1.4] lg:text-[21px]">
                   <p className="mb-7 last:mb-0">
-                    Advanced AI capabilities accessible to a broader audience, including small & medium-sized businesses
-                    and individuals who may not have the resources or expertise to develop.
+                    Advanced AI capabilities accessible to a broader audience,
+                    including small & medium-sized businesses and individuals
+                    who may not have the resources or expertise to develop.
                   </p>
                   <p className="mb-7 last:mb-0">
-                    Advanced AI capabilities accessible to a broader audience, including small & medium-sized businesses
-                    and individuals who may not have the resources or expertise to develop.
+                    Advanced AI capabilities accessible to a broader audience,
+                    including small & medium-sized businesses and individuals
+                    who may not have the resources or expertise to develop.
                   </p>
                 </div>
               </div>

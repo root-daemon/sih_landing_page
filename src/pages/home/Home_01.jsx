@@ -16,7 +16,6 @@ const Home_01 = () => {
       <Integrates />
       <Content_01 />
       <Content_02 />
-      <FunFact />
 
       {/* Body Background Shape 1 */}
       <div className="orange-gradient-1 absolute -left-[15px] top-[61%] -z-[1] h-[400px] w-[400px] -rotate-[-9.022deg] rounded-[400px]"></div>

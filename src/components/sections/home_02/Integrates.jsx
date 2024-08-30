@@ -1,4 +1,5 @@
-import { BiTrafficCone, MdElectricBolt, MdFireTruck } from "react-icons/md";
+import { BiTrafficCone } from "react-icons/bi";
+import { MdElectricBolt, MdFireTruck } from "react-icons/md";
 import { IoWater, IoPeople } from "react-icons/io5";
 import { FaCity } from "react-icons/fa6";
 import { RiHospitalFill, RiRoadsterFill } from "react-icons/ri";
@@ -22,26 +23,26 @@ const Integrates = () => {
                 </div>
                 {/* Section Content Block */}
 
-                <ul className="my-12 flex flex-col gap-y-6 font-clashDisplay text-[22px] font-medium leading-[1.28] tracking-[1px] lg:text-[28px]">
+                <ul className="my-12 flex flex-col gap-y-6 text-[22px] font-normal leading-[1.28] tracking-[1px] lg:text-[28px]">
                   <li className="relative pl-[35px] after:absolute after:left-[10px] after:top-3 after:h-[15px] after:w-[15px] after:rounded-[50%] after:bg-colorOrangyRed">
-                    Integrated Dashboard:Centralize project information for
-                    better visibility and coordination.{" "}
+                    <strong>Integrated Dashboard:</strong> Centralize project
+                    information for better visibility and coordination.
                   </li>
                   <li className="relative pl-[35px] after:absolute after:left-[10px] after:top-3 after:h-[15px] after:w-[15px] after:rounded-[50%] after:bg-colorOrangyRed">
-                    Mandatory Coordination Meetings: Ensure alignment and avoid
-                    conflicts.{" "}
+                    <strong>Mandatory Coordination Meetings:</strong> Ensure
+                    alignment and avoid conflicts.
                   </li>
                   <li className="relative pl-[35px] after:absolute after:left-[10px] after:top-3 after:h-[15px] after:w-[15px] after:rounded-[50%] after:bg-colorOrangyRed">
-                    Real-time Monitoring: Track progress, identify issues, and
-                    enable quick responses.{" "}
+                    <strong>Real-time Monitoring:</strong> Track progress,
+                    identify issues, and enable quick responses.
                   </li>
                   <li className="relative pl-[35px] after:absolute after:left-[10px] after:top-3 after:h-[15px] after:w-[15px] after:rounded-[50%] after:bg-colorOrangyRed">
-                    Inter-Departmental Task Forces: Facilitate collaboration and
-                    problem-solving.{" "}
+                    <strong>Inter-Departmental Task Forces:</strong> Facilitate
+                    collaboration and problem-solving.
                   </li>
                   <li className="relative pl-[35px] after:absolute after:left-[10px] after:top-3 after:h-[15px] after:w-[15px] after:rounded-[50%] after:bg-colorOrangyRed">
-                    Simplified Approval Processes: Streamline procedures for
-                    faster decision-making
+                    <strong>Simplified Approval Processes:</strong> Streamline
+                    procedures for faster decision-making.
                   </li>
                 </ul>
               </div>
@@ -77,7 +78,6 @@ const Integrates = () => {
                   </div>
                 </div>
                 {/* Logo Horizontal Animation */}
-                {/* Logo Horizontal Animation */}
                 <div className="horizontal-slide-from-left-to-right flex w-[1161px] gap-x-6">
                   <div className="flex h-[105px] w-[105px] items-center justify-center rounded-[10px] bg-white">
                     <FaCity className="h-16 w-16 text-black" />
@@ -107,7 +107,6 @@ const Integrates = () => {
                     <RiHospitalFill className="h-16 w-16 text-black" />
                   </div>
                 </div>
-
                 {/* Logo Horizontal Animation */}
               </div>
             </div>
