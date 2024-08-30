@@ -1,4 +1,8 @@
-import { Link } from "react-router-dom";
+import { BiTrafficCone, MdElectricBolt, MdFireTruck } from "react-icons/md";
+import { IoWater, IoPeople } from "react-icons/io5";
+import { FaCity } from "react-icons/fa6";
+import { RiHospitalFill, RiRoadsterFill } from "react-icons/ri";
+import { TbBuildingSkyscraper } from "react-icons/tb";
 
 const Integrates = () => {
   return (
@@ -13,16 +17,11 @@ const Integrates = () => {
                 {/* Section Content Block */}
                 <div className="mb-6">
                   <h2 className="text-4xl font-medium leading-[1.06] text-white sm:text-[44px] lg:text-[56px] xl:text-[75px]">
-                    Integrates your favorite channels
+                    Our Solutions
                   </h2>
                 </div>
                 {/* Section Content Block */}
-                <p className="mb-7 last:mb-0">
-                  The ability to integrate AI chatbots into multiple channels
-                  enables businesses to meet users where they are, providing a
-                  consistent and convenient experience across various
-                  touchpoints.
-                </p>
+
                 <ul className="my-12 flex flex-col gap-y-6 font-clashDisplay text-[22px] font-medium leading-[1.28] tracking-[1px] lg:text-[28px]">
                   <li className="relative pl-[35px] after:absolute after:left-[10px] after:top-3 after:h-[15px] after:w-[15px] after:rounded-[50%] after:bg-colorOrangyRed">
                     Integrated Dashboard:Centralize project information for
@@ -41,138 +40,74 @@ const Integrates = () => {
                     problem-solving.{" "}
                   </li>
                   <li className="relative pl-[35px] after:absolute after:left-[10px] after:top-3 after:h-[15px] after:w-[15px] after:rounded-[50%] after:bg-colorOrangyRed">
-                    Training and Capacity Building: Enhance skills and promote a
-                    collaborative culture.
+                    Simplified Approval Processes: Streamline procedures for
+                    faster decision-making
                   </li>
                 </ul>
-                <Link
-                  rel="noopener noreferrer"
-                  to="/contact"
-                  className="button relative z-[1] inline-flex items-center gap-3 rounded-[50px] border-none bg-colorViolet py-[18px] text-white after:bg-colorOrangyRed hover:text-white"
-                >
-                  Explore Integrations
-                  <img
-                    src="assets/img/th-2/icon-white-long-arrow-right.svg"
-                    alt="icon-white-long-arrow-right"
-                  />
-                </Link>
               </div>
               <div className="flex flex-col gap-6 overflow-hidden rounded-[30px] bg-gradient-to-t from-[rgba(255,255,255,.1)] to-[rgba(0,0,0,0.5)] py-[124px]">
                 {/* Logo Horizontal Animation */}
                 <div className="horizontal-slide-from-right-to-left flex w-[1161px] gap-x-6">
                   <div className="flex h-[105px] w-[105px] items-center justify-center rounded-[10px] bg-white">
-                    <img
-                      src="assets/img/th-2/icon-flat-color-discord.svg"
-                      alt="icon-flat-color-discord"
-                    />
+                    <BiTrafficCone className="h-16 w-16 text-black" />
                   </div>
                   <div className="flex h-[105px] w-[105px] items-center justify-center rounded-[10px] bg-white">
-                    <img
-                      src="assets/img/th-2/icon-flat-color-github.svg"
-                      alt="icon-flat-color-github"
-                    />
+                    <MdElectricBolt className="h-16 w-16 text-black" />
                   </div>
                   <div className="flex h-[105px] w-[105px] items-center justify-center rounded-[10px] bg-white">
-                    <img
-                      src="assets/img/th-2/icon-flat-color-mailchamp.svg"
-                      alt="icon-flat-color-mailchamp"
-                    />
+                    <IoWater className="h-16 w-16 text-black" />
                   </div>
                   <div className="flex h-[105px] w-[105px] items-center justify-center rounded-[10px] bg-white">
-                    <img
-                      src="assets/img/th-2/icon-flat-color-messenger.svg"
-                      alt="icon-flat-color-messenger"
-                    />
+                    <FaCity className="h-16 w-16 text-black" />
                   </div>
                   <div className="flex h-[105px] w-[105px] items-center justify-center rounded-[10px] bg-white">
-                    <img
-                      src="assets/img/th-2/icon-flat-color-skype.svg"
-                      alt="icon-flat-color-skype"
-                    />
+                    <IoPeople className="h-16 w-16 text-black" />
                   </div>
                   <div className="flex h-[105px] w-[105px] items-center justify-center rounded-[10px] bg-white">
-                    <img
-                      src="assets/img/th-2/icon-flat-color-slack.svg"
-                      alt="icon-flat-color-slack"
-                    />
+                    <RiHospitalFill className="h-16 w-16 text-black" />
                   </div>
                   <div className="flex h-[105px] w-[105px] items-center justify-center rounded-[10px] bg-white">
-                    <img
-                      src="assets/img/th-2/icon-flat-color-snapchat.svg"
-                      alt="icon-flat-color-snapchat"
-                    />
+                    <TbBuildingSkyscraper className="h-16 w-16 text-black" />
                   </div>
                   <div className="flex h-[105px] w-[105px] items-center justify-center rounded-[10px] bg-white">
-                    <img
-                      src="assets/img/th-2/icon-flat-color-whatsapp.svg"
-                      alt="icon-flat-color-whatsapp"
-                    />
+                    <MdFireTruck className="h-16 w-16 text-black" />
                   </div>
                   <div className="flex h-[105px] w-[105px] items-center justify-center rounded-[10px] bg-white">
-                    <img
-                      src="assets/img/th-2/icon-flat-color-zendesk.svg"
-                      alt="icon-flat-color-zendesk"
-                    />
+                    <RiRoadsterFill className="h-16 w-16 text-black" />
                   </div>
                 </div>
                 {/* Logo Horizontal Animation */}
                 {/* Logo Horizontal Animation */}
                 <div className="horizontal-slide-from-left-to-right flex w-[1161px] gap-x-6">
                   <div className="flex h-[105px] w-[105px] items-center justify-center rounded-[10px] bg-white">
-                    <img
-                      src="assets/img/th-2/icon-flat-color-discord.svg"
-                      alt="icon-flat-color-discord"
-                    />
+                    <FaCity className="h-16 w-16 text-black" />
                   </div>
                   <div className="flex h-[105px] w-[105px] items-center justify-center rounded-[10px] bg-white">
-                    <img
-                      src="assets/img/th-2/icon-flat-color-github.svg"
-                      alt="icon-flat-color-github"
-                    />
+                    <IoPeople className="h-16 w-16 text-black" />
                   </div>
                   <div className="flex h-[105px] w-[105px] items-center justify-center rounded-[10px] bg-white">
-                    <img
-                      src="assets/img/th-2/icon-flat-color-mailchamp.svg"
-                      alt="icon-flat-color-mailchamp"
-                    />
+                    <BiTrafficCone className="h-16 w-16 text-black" />
                   </div>
                   <div className="flex h-[105px] w-[105px] items-center justify-center rounded-[10px] bg-white">
-                    <img
-                      src="assets/img/th-2/icon-flat-color-messenger.svg"
-                      alt="icon-flat-color-messenger"
-                    />
+                    <TbBuildingSkyscraper className="h-16 w-16 text-black" />
                   </div>
                   <div className="flex h-[105px] w-[105px] items-center justify-center rounded-[10px] bg-white">
-                    <img
-                      src="assets/img/th-2/icon-flat-color-skype.svg"
-                      alt="icon-flat-color-skype"
-                    />
+                    <RiRoadsterFill className="h-16 w-16 text-black" />
                   </div>
                   <div className="flex h-[105px] w-[105px] items-center justify-center rounded-[10px] bg-white">
-                    <img
-                      src="assets/img/th-2/icon-flat-color-slack.svg"
-                      alt="icon-flat-color-slack"
-                    />
+                    <MdFireTruck className="h-16 w-16 text-black" />
                   </div>
                   <div className="flex h-[105px] w-[105px] items-center justify-center rounded-[10px] bg-white">
-                    <img
-                      src="assets/img/th-2/icon-flat-color-snapchat.svg"
-                      alt="icon-flat-color-snapchat"
-                    />
+                    <IoWater className="h-16 w-16 text-black" />
                   </div>
                   <div className="flex h-[105px] w-[105px] items-center justify-center rounded-[10px] bg-white">
-                    <img
-                      src="assets/img/th-2/icon-flat-color-whatsapp.svg"
-                      alt="icon-flat-color-whatsapp"
-                    />
+                    <MdElectricBolt className="h-16 w-16 text-black" />
                   </div>
                   <div className="flex h-[105px] w-[105px] items-center justify-center rounded-[10px] bg-white">
-                    <img
-                      src="assets/img/th-2/icon-flat-color-zendesk.svg"
-                      alt="icon-flat-color-zendesk"
-                    />
+                    <RiHospitalFill className="h-16 w-16 text-black" />
                   </div>
                 </div>
+
                 {/* Logo Horizontal Animation */}
               </div>
             </div>

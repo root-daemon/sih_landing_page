@@ -13,9 +13,7 @@ const Home_01 = () => {
       <Hero />
       <Service />
       <Map />
-
       <Integrates />
-
       <Content_01 />
       <Content_02 />
       <FunFact />
