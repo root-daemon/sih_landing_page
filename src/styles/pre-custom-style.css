@@ -496,16 +496,16 @@
 }
 
 .footer-text-slider {
-  animation: horizontal-slide-from-right-to-left 10s linear infinite normal
+  animation: horizontal-slide-from-right-to-left 15s linear infinite normal
     forwards;
 }
 
 .horizontal-slide-from-right-to-left {
-  animation: horizontal-slide-from-right-to-left linear 10s infinite;
+  animation: horizontal-slide-from-right-to-left linear 20s infinite;
 }
 
 .horizontal-slide-from-left-to-right {
-  animation: horizontal-slide-from-left-to-right linear 10s infinite;
+  animation: horizontal-slide-from-left-to-right linear 20s infinite;
 }
 
 @keyframes horizontal-slide-from-right-to-left {
@@ -514,7 +514,7 @@
   }
 
   to {
-    transform: translateX(-50%);
+    transform: translateX(-134.5%);
   }
 }
 

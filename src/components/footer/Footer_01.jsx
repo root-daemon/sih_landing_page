@@ -45,6 +45,37 @@ const Footer_01 = () => {
             <div className='block font-dmSans text-4xl font-bold leading-none -tracking-[2px] text-black lg:text-6xl xl:text-7xl xxl:text-[80px]'>
               For a Better Future
             </div>
+
+            <img
+              src='assets/img/th-1/footer-text-slider-icon.svg'
+              alt='footer-text-slider-icon'
+              width={60}
+              height={60}
+              className='h-10 w-10 lg:h-[60px] lg:w-[60px]'
+            />
+            <div className='block font-dmSans text-4xl font-bold leading-none -tracking-[2px] text-black lg:text-6xl xl:text-7xl xxl:text-[80px]'>
+              Let&apos;s revolutionize
+            </div>
+            <img
+              src='assets/img/th-1/footer-text-slider-icon.svg'
+              alt='footer-text-slider-icon'
+              width={60}
+              height={60}
+              className='h-10 w-10 lg:h-[60px] lg:w-[60px]'
+            />
+            <div className='block font-dmSans text-4xl font-bold leading-none -tracking-[2px] text-black lg:text-6xl xl:text-7xl xxl:text-[80px]'>
+            India's Infrastructure
+            </div>
+            <img
+              src='assets/img/th-1/footer-text-slider-icon.svg'
+              alt='footer-text-slider-icon'
+              width={60}
+              height={60}
+              className='h-10 w-10 lg:h-[60px] lg:w-[60px]'
+            />
+            <div className='block font-dmSans text-4xl font-bold leading-none -tracking-[2px] text-black lg:text-6xl xl:text-7xl xxl:text-[80px]'>
+              For a Better Future
+            </div>
             {/* Footer Slide Item  */}
           </div>
         </div>
