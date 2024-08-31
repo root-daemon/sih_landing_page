@@ -17,13 +17,13 @@ const Hero = () => {
               </p>
               <div className="jos flex flex-wrap justify-center gap-6" data-jos_animation="fade">
                 <Link
-                  to="/contact"
+                  to="#"
                   className="button rounded-[50px] border-2 border-black bg-black py-4 text-white after:bg-colorOrangyRed hover:border-colorOrangyRed hover:text-white"
                 >
                   Get started for free
                 </Link>
                 <Link
-                  to="/about"
+                  to="#"
                   className="button rounded-[50px] border-2 border-black bg-transparent py-4 text-black after:bg-colorOrangyRed hover:border-colorOrangyRed hover:text-white"
                 >
                   Learn more
