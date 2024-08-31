@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const LogoDark = () => {
   return (
     <Link to="/">
-      <img src="/assets/img/Title.png" alt="AIMass" className="w-36" />
+      <img src="/assets/img/icobw.svg" alt="Coordina" className="w-8" />
     </Link>
   );
 };

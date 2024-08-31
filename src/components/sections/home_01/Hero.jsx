@@ -32,10 +32,8 @@ const Hero = () => {
             </div>
             <div className="jos hero-img overflow-hidden rounded-xl bg-black shadow-lg" data-jos_animation="zoom">
               <img
-                src="assets/img/th-1/heroo.png"
+                src="assets/img/hero.svg"
                 alt="hero-dashboard"
-                width="1296"
-                height="640"
                 className="h-auto w-full"
               />
             </div>

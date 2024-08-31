@@ -7,10 +7,10 @@ const Content_01 = () => {
         <div className="pb-20 xl:pb-[150px]">
           {/* Section Container */}
           <div className="global-container">
-            <div className="grid grid-cols-1 items-center gap-12 md:grid-cols-2 lg:gap-20 xl:gap-28 xxl:gap-32">
+            <div className="grid grid-cols-1 items-center gap-12 md:grid-cols-2 lg:gap-20 xl:gap-24 xxl:gap-24">
               {/* Content Left Block */}
               <div
-                className="jos order-2 overflow-hidden rounded-lg shadow-xl md:order-1"
+                className="jos order-2 overflow-hidden rounded-3xl shadow-xl md:order-1"
                 data-jos_animation="fade-left"
               >
                 <img
@@ -18,7 +18,7 @@ const Content_01 = () => {
                   alt="content-image-1"
                   width="526"
                   height="450"
-                  className="h-auto w-full"
+                  className="h-auto w-full rounded-3xl"
                 />
               </div>
               {/* Content Left Block */}
@@ -29,19 +29,12 @@ const Content_01 = () => {
               >
                 {/* Section Content Block */}
                 <div className="mb-6">
-                  <h2>Accessible to a wider audience</h2>
+                  <h2 className="text-6xl">Look what&apos;s happening.</h2>
                 </div>
                 {/* Section Content Block */}
                 <div className="text-lg leading-[1.4] lg:text-[21px]">
                   <p className="mb-7 last:mb-0">
-                    Advanced AI capabilities accessible to a broader audience,
-                    including small & medium-sized businesses and individuals
-                    who may not have the resources or expertise to develop.
-                  </p>
-                  <p className="mb-7 last:mb-0">
-                    Advanced AI capabilities accessible to a broader audience,
-                    including small & medium-sized businesses and individuals
-                    who may not have the resources or expertise to develop.
+                  Providing a real-time overview of ongoing projects and initiatives within a government organization. The map-based interface visually displays the location of tasks and their current status, enabling efficient monitoring and management.
                   </p>
                 </div>
               </div>

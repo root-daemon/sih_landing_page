@@ -16,7 +16,7 @@ const Map = () => {
           {/* Section Content Block */}
           {/* Map Block */}
           <div className="relative">
-            <img src="assets/img/th-1/mapbase.svg" alt="mapbase" className="h-auto w-full" />
+            <img src="assets/img/th-1/mapbase.svg" alt="mapbase" className="h-auto lg:w-[50vw] w-full mx-auto" />
             {/* Location 1 */}
             <div className="group absolute hidden sm:flex gap-2 sm:top-[10%] sm:left-[13%]">
               <div className="relative w-[50px] h-[50px]">
