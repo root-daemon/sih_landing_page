@@ -25,24 +25,24 @@ const Integrates = () => {
 
                 <div className="my-12 flex flex-col gap-y-6 text-xl font-normal leading-[1.28] tracking-[1px] lg:text-[24px]">
                   <div className="relative flex flex-col gap-1 pl-[35px] after:absolute after:left-[10px] after:top-3 after:h-[8px] after:w-[8px] after:rounded-[50%] after:bg-[#FE7230]">
-                    <span className="font-semibold">Integrated Dashboard</span> Centralize project
+                    <span className="font-semibold">Integrated Dashboard:</span> Centralize project
                     information for better visibility and coordination.
                   </div>
                   <div className="relative pl-[35px] after:absolute flex flex-col gap-1 after:left-[10px] after:top-3 after:h-[8px] after:w-[8px] after:rounded-[50%] after:bg-[#FE7230]">
-                  <span className="font-semibold">Mandatory Coordination Meetings</span> Ensure
+                  <span className="font-semibold">Mandatory Coordination Meetings:</span> Ensure
                     alignment and avoid conflicts.
                   </div>
                   <div className="relative flex flex-col gap-1 pl-[35px] after:absolute after:left-[10px] after:top-3 after:h-[8px] after:w-[8px] after:rounded-[50%] after:bg-[#FE7230]">
-                  <span className="font-semibold">Real-time Monitoring</span> Track progress,
+                  <span className="font-semibold">Real-time Monitoring:</span> Track progress,
                     identify issues, and enable quick responses.
                   </div>
                   <div className="relative flex flex-col gap-1 pl-[35px] after:absolute after:left-[10px] after:top-3 after:h-[8px] after:w-[8px] after:rounded-[50%] after:bg-[#FE7230]">
-                  <span className="font-semibold">Inter-Departmental Task Forces</span> Facilitate
+                  <span className="font-semibold">Inter-Departmental Task Forces:</span> Facilitate
                     collaboration and problem-solving.
                   </div>
                   <li className="relative flex flex-col gap-1 pl-[35px] after:absolute after:left-[10px] after:top-3 after:h-[8px] after:w-[8px] after:rounded-[50%] after:bg-[#FE7230]">
-                  <span className="font-semibold">Simplified Approval Processes</span> Streamline
-                    procedures for faster decision-making.
+                  <span className="font-semibold">Simplified Approval Processes:</span> Streamline
+                    procedures for faster <br /> decision-making.
                   </li>
                 </div>
               </div>

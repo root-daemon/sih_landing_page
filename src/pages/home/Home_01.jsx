@@ -2,7 +2,7 @@ import Hero from "../../components/sections/home_01/Hero";
 import Service from "../../components/sections/home_01/service/Service";
 import Content_01 from "../../components/sections/home_01/Content_01";
 import Content_02 from "../../components/sections/home_01/Content_02";
-import FunFact from "../../components/sections/home_01/FunFact";
+
 
 import Map from "./../../components/sections/inner-pages/contact/Map";
 import Integrates from "./../../components/sections/home_02/Integrates";

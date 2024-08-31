@@ -18,7 +18,7 @@ const Map = () => {
           <div className="relative">
             <img src="assets/img/th-1/mapbase.svg" alt="mapbase" className="h-auto lg:w-[50vw] w-full mx-auto" />
             {/* Location 1 */}
-            <div className="group absolute hidden sm:flex gap-2 sm:top-[10%] sm:left-[13%]">
+            <div className="group absolute hidden sm:flex gap-2 top-[21%] left-[29%] sm:left-[35%] ">
               <div className="relative w-[50px] h-[50px]">
                 <button className="group flex justify-center items-center w-[50px] h-[50px] relative transition-all duration-300">
                   <img
@@ -44,15 +44,15 @@ const Map = () => {
                       width={17}
                       height={17}
                     />
-                    Toronto, Canada
+                    Delhi, India
                   </div>
-                  <address className="not-italic font-semibold">Line 1: House/Flat 208, Venue Street</address>
+          
                 </div>
               </div>
             </div>
             {/* Location 1 */}
             {/* Location 2 */}
-            <div className="group absolute hidden sm:flex gap-2 sm:top-[65%] sm:left-[18%]">
+            <div className="group absolute hidden sm:flex gap-2 top-[45%]  left-[66%] sm:left-[63%]">
               <div className="relative w-[50px] h-[50px]">
                 <button className="group flex justify-center items-center w-[50px] h-[50px] relative transition-all duration-300">
                   <img
@@ -78,15 +78,15 @@ const Map = () => {
                       width={17}
                       height={17}
                     />
-                    Sao Paulo, Brazil
+                    Kolkata, West Bengal
                   </div>
-                  <address className="not-italic font-semibold">Line 1: House/Flat 208, Venue Street</address>
+                
                 </div>
               </div>
             </div>
             {/* Location 2 */}
             {/* Location 3 */}
-            <div className="group absolute hidden sm:flex gap-2 sm:top-[38%] sm:left-[38%]">
+            <div className="group absolute hidden sm:flex gap-2 top-[59%] left-[12.6%] sm:left-[23%]">
               <div className="relative w-[50px] h-[50px]">
                 <button className="group flex justify-center items-center w-[50px] h-[50px] relative transition-all duration-300">
                   <img
@@ -112,15 +112,16 @@ const Map = () => {
                       width={17}
                       height={17}
                     />
-                    Bamako, Mali
+                    Mumbai, Maharashtra
                   </div>
-                  <address className="not-italic font-semibold">Line 1: House/Flat 208, Venue Street</address>
+        
                 </div>
               </div>
             </div>
             {/* Location 3 */}
             {/* Location 4 */}
-            <div className="group absolute hidden sm:flex gap-2 sm:top-[5%]  sm:left-[61%]">
+            <div className="group absolute hidden sm:flex gap-2 top-[77%]  
+            left-[28%] sm:left-[33%]">
               <div className="relative w-[50px] h-[50px]">
                 <button className="group flex justify-center items-center w-[50px] h-[50px] relative transition-all duration-300">
                   <img
@@ -146,15 +147,15 @@ const Map = () => {
                       width={17}
                       height={17}
                     />
-                    Noril'sk, Russia
+                    Bengaluru, Karnataka
                   </div>
-                  <address className="not-italic font-semibold">Line 1: House/Flat 208, Venue Street</address>
+       
                 </div>
               </div>
             </div>
             {/* Location 4 */}
             {/* Location 5 */}
-            <div className="group absolute hidden sm:flex gap-2 sm:top-[72%] sm:left-[88%]">
+            <div className="group absolute hidden sm:flex gap-2 top-[78%] left-[39%] sm:left-[42%]">
               <div className="relative w-[50px] h-[50px]">
                 <button className="group flex justify-center items-center w-[50px] h-[50px] relative transition-all duration-300">
                   <img
@@ -180,9 +181,9 @@ const Map = () => {
                       width={17}
                       height={17}
                     />
-                    Lake Eyre, Australia
+                    Chennai, Tamil Nadu
                   </div>
-                  <address className="not-italic font-semibold">Line 1: House/Flat 208, Venue Street</address>
+           
                 </div>
               </div>
             </div>

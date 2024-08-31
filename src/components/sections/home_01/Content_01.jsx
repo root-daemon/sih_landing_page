@@ -10,7 +10,7 @@ const Content_01 = () => {
             <div className="grid grid-cols-1 items-center gap-12 md:grid-cols-2 lg:gap-20 xl:gap-24 xxl:gap-24">
               {/* Content Left Block */}
               <div
-                className="jos order-2 overflow-hidden rounded-3xl shadow-xl md:order-1"
+                className="jos order-2 overflow-hidden rounded-3xl drop-shadow-2xl md:order-1"
                 data-jos_animation="fade-left"
               >
                 <img
@@ -32,7 +32,7 @@ const Content_01 = () => {
                   <h2 className="text-6xl">Look what&apos;s happening.</h2>
                 </div>
                 {/* Section Content Block */}
-                <div className="text-lg leading-[1.4] lg:text-[21px]">
+                <div className="text-lg leading-[1.4] lg:text-[21px] text-justify">
                   <p className="mb-7 last:mb-0">
                   Providing a real-time overview of ongoing projects and initiatives within a government organization. The map-based interface visually displays the location of tasks and their current status, enabling efficient monitoring and management.
                   </p>

@@ -4,7 +4,7 @@ const Content_02 = () => {
       {/*...::: Content Section Start_2 :::... */}
       <section id="content-section-2">
         {/* Section Spacer */}
-        <div className="pb-20 xl:pb-[150px]">
+        <div className="pb-32 xl:pb-[150px]">
           {/* Section Container */}
           <div className="global-container">
             <div className="grid grid-cols-1 items-center gap-12 md:grid-cols-2 lg:gap-20 xl:grid-cols-[minmax(0,_1.2fr)_1fr] xl:gap-28 xxl:gap-32">
@@ -30,7 +30,7 @@ const Content_02 = () => {
                   <h2 className="text-6xl">Plan it, Manage and Push it.</h2>
                 </div>
                 {/* Section Content Block */}
-                <div className="text-lg leading-[1.4] lg:text-[21px]">
+                <div className="text-lg leading-[1.4] lg:text-[21px] text-justify">
                   <p className="mb-7 last:mb-0">
                   Providing a clear board layout, you can easily visualize the progress of your initiatives. Assign tasks, track their status, and identify potential bottlenecks effortlessly. Designed to streamline your workflow and enhance productivity.
                   </p>

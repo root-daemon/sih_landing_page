@@ -1,9 +1,7 @@
 import { Link } from 'react-router-dom';
 
 const Footer_01 = () => {
-  const handleSubmit = (e) => {
-    e.preventDefault();
-  };
+
 
   return (
     <footer className='relative z-[1] -mt-[70px] overflow-hidden rounded-tl-[30px] rounded-tr-[30px] bg-colorLinenRuffle lg:rounded-tl-[50px] lg:rounded-tr-[50px]'>
@@ -33,7 +31,7 @@ const Footer_01 = () => {
               className='h-10 w-10 lg:h-[60px] lg:w-[60px]'
             />
             <div className='block font-dmSans text-4xl font-bold leading-none -tracking-[2px] text-black lg:text-6xl xl:text-7xl xxl:text-[80px]'>
-              Let&apos;s revolutionize
+            India's Infrastructure
             </div>
             {/* Footer Slide Item  */}
             {/* Footer Slide Item  */}
@@ -45,7 +43,7 @@ const Footer_01 = () => {
               className='h-10 w-10 lg:h-[60px] lg:w-[60px]'
             />
             <div className='block font-dmSans text-4xl font-bold leading-none -tracking-[2px] text-black lg:text-6xl xl:text-7xl xxl:text-[80px]'>
-              Let&apos;s revolutionize
+              For a Better Future
             </div>
             {/* Footer Slide Item  */}
           </div>
@@ -59,13 +57,13 @@ const Footer_01 = () => {
         <div className='lg grid grid-cols-1 gap-10 py-[60px] md:grid-cols-[1fr_auto_auto] xl:grid-cols-[1fr_auto_auto_auto] xl:gap-20 xl:py-[100px]'>
           {/* Footer Widget */}
           <div className='flex flex-col gap-y-6'>
-            <Link to='/' className='inline-block'>
+            <Link to='/' className='flex flex-row items-center '>
               <img
-                src='assets/img/th-1/logo.png'
+                src="/assets/img/icobw.svg" 
                 alt='logo'
-                width={96}
-                height={24}
+                className='w-8 h-8'
               />
+              <div className='px-4 font-bold text-xl uppercase'>Coordina</div>
             </Link>
             <p>
               Our mission is to harness the power of AI to solve complex
