@@ -29,7 +29,7 @@ const Map = () => {
                   <div className="ml-10 mt-12 flex items-center justify-center gap-3">
                     <div className="block max-w-sm rounded-lg border border-orange-500 bg-white p-3 shadow hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
                       <h5 className="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-                        Across cities
+                        Across States
                       </h5>
                       <p className="font-normal text-gray-700 dark:text-gray-400">
                         100+
@@ -41,7 +41,7 @@ const Map = () => {
                         Across cities
                       </h5>
                       <p className="font-normal text-gray-700 dark:text-gray-400">
-                        100+
+                        20+
                       </p>
                     </div>
 

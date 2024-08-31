@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { BsTrello } from "react-icons/bs";
 import { FaMapLocation } from "react-icons/fa6";
 import Card from "../../components/Card";
 import { BiTrafficCone } from "react-icons/bi";
 import { TbLayoutSidebarRightCollapse } from "react-icons/tb";
 import Notification from "../../components/Notification";
+import Logo from "../../components/logo/Logo";
 
 export default function Dashboard() {
   const [notification, setNotification] = useState(false);
@@ -12,12 +13,11 @@ export default function Dashboard() {
     <main className="h-screen w-screen overflow-hidden bg-[#D6CFC8]">
       <header className="flex flex-row items-center justify-between px-12 py-6">
         <div className="flex flex-row gap-3">
-          <img src="assets/img/icobw.svg" alt="e" className="h-8 w-8" />
-          <h1 className="text-center text-2xl font-semibold uppercase text-black">
-            Coordina
-          </h1>
+          <Logo />
         </div>
-        <div className="absolute top-7 left-96 text-sm flex gap-3 items-center font-medium justify-center"><span className="cursor-pointer">Tasks</span></div>
+        <div className="absolute left-96 top-7 flex items-center justify-center gap-3 text-sm font-medium">
+          <span className="cursor-pointer">Tasks</span>
+        </div>
         <div
           onClick={() => setNotification(!notification)}
           className="cursor-pointer text-3xl text-black"
@@ -39,7 +39,7 @@ export default function Dashboard() {
         </div>
         <div className="h-full w-full overflow-auto rounded-tl-3xl bg-gradient-to-br from-[#EFEAE4] to-[#e3d3c7df] p-12 pb-0">
           <h1 className="text-5xl font-semibold">Departments</h1>
-          <div className="grid-cols-cards mt-6 grid gap-5">
+          <div className="mt-6 grid grid-cols-cards gap-5">
             <Card
               title="Traffic Management and Transport Department"
               tasks={[
