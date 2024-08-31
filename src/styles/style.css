@@ -21,7 +21,9 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: DM Sans, sans-serif;
+  font-family:
+    DM Sans,
+    sans-serif;
   letter-spacing: 0em;
 }
 
@@ -100,13 +102,13 @@ h5 {
   line-height: 1.28;
 }
 
-.glass{
-  background: rgba( 255, 255, 255, 0.25 );
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 8.5px );
--webkit-backdrop-filter: blur( 8.5px );
-border-radius: 10px;
-border: 1px solid rgba( 255, 255, 255, 0.18 );
+.glass {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(8.5px);
+  -webkit-backdrop-filter: blur(8.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .white-glassmorphism {
@@ -115,4 +117,29 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.3);
+}
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-129px * 9));
+  }
+}
+
+@keyframes scroll-right {
+  0% {
+    transform: translateX(calc(-129px * 9));
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.animate-scroll-left {
+  animation: scroll-left 30s linear infinite;
+}
+
+.animate-scroll-right {
+  animation: scroll-right 30s linear infinite;
 }
