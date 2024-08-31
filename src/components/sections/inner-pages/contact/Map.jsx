@@ -26,40 +26,33 @@ const Map = () => {
                     </h2>
                   </div>
 
-                  <div className="flex items-center justify-center gap-3 ml-10 mt-12">
-                    <div
-                      class="block max-w-sm rounded-lg border border-orange-500 bg-white p-3 shadow hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
-                    >
-                      <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
+                  <div className="ml-10 mt-12 flex items-center justify-center gap-3">
+                    <div className="block max-w-sm rounded-lg border border-orange-500 bg-white p-3 shadow hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                      <h5 className="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
                         Across cities
                       </h5>
-                      <p class="font-normal text-gray-700 dark:text-gray-400">
+                      <p className="font-normal text-gray-700 dark:text-gray-400">
                         100+
                       </p>
                     </div>
 
-                    <div
-                      class="block max-w-sm rounded-lg border border-gray-200 bg-orange-500 p-3 shadow hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
-                    >
-                      <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
+                    <div className="block max-w-sm rounded-lg border border-gray-200 bg-orange-500 p-3 shadow hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                      <h5 className="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
                         Across cities
                       </h5>
-                      <p class="font-normal text-gray-700 dark:text-gray-400">
+                      <p className="font-normal text-gray-700 dark:text-gray-400">
                         100+
                       </p>
                     </div>
 
-                    <div
-                      class="block max-w-sm rounded-lg border border-orange-500 bg-white p-3 shadow hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
-                    >
-                      <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
+                    <div className="block max-w-sm rounded-lg border border-orange-500 bg-white p-3 shadow hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                      <h5 className="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
                         Across cities
                       </h5>
-                      <p class="font-normal text-gray-700 dark:text-gray-400">
+                      <p className="font-normal text-gray-700 dark:text-gray-400">
                         100+
                       </p>
                     </div>
-                    
                   </div>
                 </div>
               </div>
@@ -259,7 +252,7 @@ const Map = () => {
                         className="absolute scale-50 opacity-0 transition-all duration-300 group-hover:scale-100 group-hover:opacity-100"
                       />
                     </button>
-                    <div className="invisible absolute bottom-0 right-0 w-[170px] rounded-[8px] bg-white p-1 text-sm opacity-0 transition-all duration-300 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100 xl:right-[50px] xl:translate-y-12 xxl:left-[50px] xxl:right-auto">
+                    <div className="invisible absolute bottom-0 right-0 z-50 w-[170px] rounded-[8px] bg-white p-1 text-sm opacity-0 transition-all duration-300 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100 xl:right-[50px] xl:translate-y-12 xxl:left-[50px] xxl:right-auto">
                       <div className="flex gap-1 pb-1 font-bold">
                         <img
                           src="assets/img/th-1/icon-black-location-marker.svg"
@@ -300,7 +293,7 @@ const Map = () => {
                           width={27}
                           height={27}
                         />
-                        Indore, <br /> Madhya Pradesh
+                        Nagpur, <br /> Maharashtra
                       </div>
                     </div>
                   </div>
