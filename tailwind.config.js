@@ -23,6 +23,9 @@ export default {
       // => @media (min-width: 1400px) { ... }
     },
     extend: {
+      gridTemplateColumns: {
+        cards: "repeat(auto-fill, minmax(22rem, 1fr))",
+      },
       fontFamily: {
         // Add your custom fonts
         dmSans: ["DM Sans", "sans-serif"],

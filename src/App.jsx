@@ -9,7 +9,7 @@ import Blog from './pages/common/Blog';
 import Contact from './pages/common/Contact';
 import Error_404 from './pages/common/Error_404';
 import Faq_02 from './pages/common/faq/faq_02/Faq_02';
-import Login from './pages/common/Login';
+// import Login from './pages/common/Login';
 import Portfolio_details from './pages/common/Portfolio_details';
 import Portfolio from './pages/common/Portfolio';
 import Pricing from './pages/common/Pricing';
@@ -22,6 +22,8 @@ import Team from './pages/common/team/Team';
 import useJOSAnimation from './hooks/useJOSAnimation';
 import Layout from './components/layout/Layout';
 import Faq_01 from './pages/common/faq/faq_01/Faq_01';
+import Dashboard from './pages/common/Dashboard';
+import Board from './pages/common/Board';
 
 function App() {
   // Init JOS Animation
@@ -30,9 +32,10 @@ function App() {
   return (
     <>
       <Routes>
+      <Route path='dashboard' element={<Dashboard />} />
+      <Route path='board' element={<Board />} />
         <Route element={<Layout />}>
           <Route path='/' element={<Home_01 />} />
-          <Route path='login' element={<Login />} />
           <Route path='signup' element={<Signup />} />
           <Route path='about' element={<About />} />
           <Route path='contact' element={<Contact />} />
