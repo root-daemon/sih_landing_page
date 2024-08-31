@@ -1,8 +1,6 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
 
 import Logo from "../logo/Logo";
-import Dashboard from "../../pages/common/Dashboard";
 
 // eslint-disable-next-line react/prop-types
 const Header = ({ loginCSS, signupCSS, navColor, light }) => {
