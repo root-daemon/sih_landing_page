@@ -1,17 +1,20 @@
 import { Link } from "react-router-dom";
+import heroimg from '../../../assets/img/heroimg.png'
 
 const Hero = () => {
   return (
     <>
       {/*...::: Hero Section Start :::... */}
       <section id="section-hero">
-        <div className="relative z-[1] overflow-hidden rounded-bl-[30px] rounded-br-[30px] bg-colorLinenRuffle pb-20 pt-28 lg:rounded-bl-[50px] lg:rounded-br-[50px] lg:pb-24 lg:pt-32 xl:pt-40 xxl:pb-[133px] xxl:pt-[195px]">
+        <div className="relative z-[1] overflow-hidden rounded-bl-[30px] rounded-br-[30px] bg-colorLinenRuffle pb-20 pt-28 lg:rounded-bl-[50px] lg:rounded-br-[50px] lg:pb-24 lg:pt-32 xl:pt-28 xxl:pb-[133px] xxl:pt-[195px]">
           <div className="global-container">
-            <div className="mb-14 flex flex-col items-center text-center lg:mb-20">
-              <h1 className="jos slide-from-bottom mb-6 max-w-[510px] lg:max-w-[768px] xl:max-w-[1076px] text-8xl">
+
+            <div className="flex  px-20">
+            <div className="mb-14 mt-16 flex flex-col items-center lg:mb-20">
+              <h1 className="jos slide-from-bottom mb-6 max-w-[510px] lg:max-w-[768px] xl:max-w-[1076px] text-6xl">
                 India's Infrastructure Revolution{" "}
               </h1>
-              <p className="jos slide-from-bottom mb-11 max-w-[700px] text-lg font-semibold sm:text-xl xl:max-w-[980px]">
+              <p className="jos slide-from-bottom mb-11 max-w-[700px] lg:text-[18px] font-semibold sm:text-xl xl:max-w-[980px]">
                 From Plans to Progress: Unified Action for India's Infrastructure Growth- Transform ideas into
                 actionable plans with coordinated efforts across departments to build a stronger nation.
               </p>
@@ -30,6 +33,14 @@ const Hero = () => {
                 </Link>
               </div>
             </div>
+
+            <div className="jos slide-from-bottom"><img
+                src={heroimg}
+                alt="hero-dashboard"
+                className="h-auto w-full"
+              /></div>
+            </div>
+
             <div className="jos hero-img overflow-hidden rounded-xl bg-black shadow-lg" data-jos_animation="zoom">
               <img
                 src="assets/img/hero.svg"
