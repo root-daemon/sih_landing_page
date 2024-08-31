@@ -17,9 +17,10 @@ export default function Dashboard() {
             Coordina
           </h1>
         </div>
+        <div className="absolute top-7 left-96 text-sm flex gap-3 items-center font-medium justify-center"><span className="cursor-pointer">Tasks</span></div>
         <div
           onClick={() => setNotification(!notification)}
-          className="cursor-pointer text-3xl text-[#E88260]"
+          className="cursor-pointer text-3xl text-black"
         >
           <TbLayoutSidebarRightCollapse
             className={`transition-all duration-100 ${notification ? "mr-96" : "rotate-180"}`}
@@ -36,7 +37,7 @@ export default function Dashboard() {
             <FaMapLocation /> Map
           </button>
         </div>
-        <div className="h-full w-full overflow-auto rounded-tl-3xl bg-gradient-to-br from-[#EFEAE4] to-[#E6D1C2] p-12 pb-0">
+        <div className="h-full w-full overflow-auto rounded-tl-3xl bg-gradient-to-br from-[#EFEAE4] to-[#e3d3c7df] p-12 pb-0">
           <h1 className="text-5xl font-semibold">Departments</h1>
           <div className="grid-cols-cards mt-6 grid gap-5">
             <Card

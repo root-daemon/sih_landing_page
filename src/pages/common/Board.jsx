@@ -1,13 +1,16 @@
 import React, { useState } from "react";
 import { BsTrello } from "react-icons/bs";
-import { FaMapLocation } from "react-icons/fa6";
+import { FaArrowRightLong, FaMapLocation } from "react-icons/fa6";
 import Card from "../../components/Card";
 import { BiTrafficCone } from "react-icons/bi";
 import { TbLayoutSidebarRightCollapse } from "react-icons/tb";
 import Notification from "../../components/Notification";
+import BoardComponent from "../../components/Droppable";
+import { useNavigate } from "react-router-dom";
 
 export default function Board() {
   const [notification, setNotification] = useState(false);
+  const navigate = useNavigate()
   return (
     <main className="h-screen w-screen overflow-hidden bg-[#D6CFC8]">
       <header className="flex flex-row items-center justify-between px-12 py-6">
@@ -17,9 +20,10 @@ export default function Board() {
             Coordina
           </h1>
         </div>
+        <div className="absolute top-7 left-96 text-sm flex gap-3 items-center font-medium justify-center"><span className="opacity-50 cursor-pointer" onClick={() => navigate('/dashboard')}>Tasks</span> <FaArrowRightLong /> Traffic Management</div>
         <div
           onClick={() => setNotification(!notification)}
-          className="cursor-pointer text-3xl text-[#E88260]"
+          className="cursor-pointer text-3xl text-black"
         >
           <TbLayoutSidebarRightCollapse
             className={`transition-all duration-100 ${notification ? "mr-96" : "rotate-180"}`}
@@ -36,69 +40,11 @@ export default function Board() {
             <FaMapLocation />
           </button>
         </div>
-        <div className="h-full w-full overflow-auto rounded-tl-3xl bg-gradient-to-br from-[#EFEAE4] to-[#E6D1C2] p-12 pb-0">
-          <h1 className="text-5xl font-semibold">Departments</h1>
-          <div className="grid-cols-cards mt-6 grid gap-5">
-            <Card
-              title="Traffic Management and Transport Department"
-              tasks={[
-                { name: "Pot holes", priority: "High" },
-                { name: "Maintenance work", priority: "Medium" },
-                { name: "Cleaning", priority: "Low" },
-              ]}
-              status={{
-                completed: 2,
-                pending: 1,
-                review: 12,
-              }}
-              icon={<BiTrafficCone className="text-2xl" />}
-            />
-
-            <Card
-              title="Traffic Management and Transport Department"
-              tasks={[
-                { name: "Pot holes", priority: "High" },
-                { name: "Maintenance work", priority: "Medium" },
-                { name: "Cleaning", priority: "Low" },
-              ]}
-              status={{
-                completed: 2,
-                pending: 1,
-                review: 12,
-              }}
-              icon={<BiTrafficCone className="text-2xl" />}
-            />
-
-            <Card
-              title="Traffic Management and Transport Department"
-              tasks={[
-                { name: "Pot holes", priority: "High" },
-                { name: "Maintenance work", priority: "Medium" },
-                { name: "Cleaning", priority: "Low" },
-              ]}
-              status={{
-                completed: 2,
-                pending: 1,
-                review: 12,
-              }}
-              icon={<BiTrafficCone className="text-2xl" />}
-            />
-
-            <Card
-              title="Traffic Management and Transport Department"
-              tasks={[
-                { name: "Pot holes", priority: "High" },
-                { name: "Maintenance work", priority: "Medium" },
-                { name: "Cleaning", priority: "Low" },
-              ]}
-              status={{
-                completed: 2,
-                pending: 1,
-                review: 12,
-              }}
-              icon={<BiTrafficCone className="text-2xl" />}
-            />
-          </div>
+        <div className="h-full w-full overflow-auto rounded-tl-3xl bg-gradient-to-br from-[#EFEAE4] to-[#e3d3c7df] p-12 pb-0">
+          <h1 className="max-w-[700px] text-4xl font-semibold">
+            Traffic Management and Transport Department
+          </h1>
+          <BoardComponent />
         </div>
       </div>
     </main>

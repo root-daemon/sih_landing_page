@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function BadgeGen({ type }) {
   return type === "high" ? (
     <div className="rounded-full font-medium text-xs bg-[#F3C4C6] text-[#EC5454] py-0.5 px-3">High</div>

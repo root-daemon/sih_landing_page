@@ -1,4 +1,3 @@
-import React from "react";
 import BadgeGen from "./BadgeGen";
 import { useNavigate } from "react-router-dom";
 
@@ -7,7 +6,7 @@ export default function Card({ title, tasks, icon, status }) {
   return (
     <div
       onClick={() => navigate("/board")}
-      className="flex min-h-[200px] flex-col gap-3 rounded-3xl border border-[#CCC7C0] bg-[#DFD9D1] p-4 px-6"
+      className="flex min-h-[200px] cursor-pointer flex-col gap-3 rounded-3xl border border-[#CCC7C0] bg-[#DFD9D1] p-4 px-6"
     >
       <div className="flex w-full items-start justify-between">
         <h3 className="max-w-[85%] text-left text-xl font-semibold">{title}</h3>
