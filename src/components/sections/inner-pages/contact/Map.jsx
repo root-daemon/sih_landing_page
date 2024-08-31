@@ -32,7 +32,7 @@ const Map = () => {
                         Across States
                       </h5>
                       <p className="font-normal text-gray-700 dark:text-gray-400">
-                        100+
+                        20+
                       </p>
                     </div>
 
@@ -41,7 +41,7 @@ const Map = () => {
                         Across cities
                       </h5>
                       <p className="font-normal text-gray-700 dark:text-gray-400">
-                        20+
+                        100+
                       </p>
                     </div>
 
