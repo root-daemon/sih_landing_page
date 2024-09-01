@@ -9,7 +9,7 @@ export default function Dashboard() {
     <main className="h-screen w-screen overflow-hidden bg-[#D6CFC8]">
       <PageHeader />
       <div className="flex h-full w-full flex-row gap-0">
-        <Sidebar collapse={collapse} active={"tasks"} />
+        <Sidebar collapse={false} active={"tasks"} />
         <div className="h-[92.5vh] w-full overflow-auto rounded-tl-3xl bg-gradient-to-br from-[#EFEAE4] to-[#e3d3c7df] p-12">
           <h1 className="max-w-[800px] text-5xl font-semibold">Departments</h1>
           <div className="mt-6 grid grid-cols-cards gap-5">
