@@ -7,7 +7,7 @@ import Notification from "../../components/Notification";
 import Logo from "../../components/logo/Logo";
 import Sidebar from "../../components/sidebar/sidebar";
 
-export default function Dashboard() {
+export default function Resources() {
   const [notification, setNotification] = useState(false);
   const [collapse, setCollpase] = useState(false);
 
@@ -31,9 +31,9 @@ export default function Dashboard() {
       </header>
       <Notification notification={notification} />
       <div className="flex h-full w-full flex-row gap-0">
-        <Sidebar collapse={collapse} active={"tasks"} />
+        <Sidebar collapse={collapse} active={"resource"} />
         <div className="h-[92.5vh] w-full overflow-auto rounded-tl-3xl bg-gradient-to-br from-[#EFEAE4] to-[#e3d3c7df] p-12">
-          <h1 className="max-w-[800px] text-5xl font-semibold">Departments</h1>
+          <h1 className="max-w-[800px] text-5xl font-semibold">Resource</h1>
           <div className="mt-6 grid grid-cols-cards gap-5">
             <Card
               title="Traffic and Transport"

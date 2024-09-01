@@ -1,7 +1,7 @@
 import { useState } from "react";
 
-import Card from "../../components/Card";
-import { BiTrafficCone } from "react-icons/bi";
+import { FaArrowRightLong } from "react-icons/fa6";
+
 import { TbLayoutSidebarRightCollapse } from "react-icons/tb";
 import Notification from "../../components/Notification";
 import Logo from "../../components/logo/Logo";
@@ -16,54 +16,60 @@ import {
   TableHeader,
   TableRow,
 } from "../../components/ui/table";
+import Header from "../../components/Header";
+import { useNavigate } from "react-router-dom";
+//s.no
+//description
+//depts (created by)
+// depts (collabs)
+//
 const invoices = [
   {
-    invoice: "INV001",
-    paymentStatus: "Paid",
-    totalAmount: "$250.00",
-    paymentMethod: "Credit Card",
+    title: "Maintance Work",
+    location: "Chennai, Tamil Nadu",
+    description: "A railway project",
+    despartment: "Railway Department",
+    departments: ["Road Department", "Fire Department"],
+    tasks: [],
   },
   {
-    invoice: "INV002",
-    paymentStatus: "Pending",
-    totalAmount: "$150.00",
-    paymentMethod: "PayPal",
+    title: "Maintance Work",
+    location: "Chennai, Tamil Nadu",
+    description: "A railway project",
+    despartment: "Railway Department",
+    departments: ["Road Department", "Fire Department"],
+    tasks: [],
   },
   {
-    invoice: "INV003",
-    paymentStatus: "Unpaid",
-    totalAmount: "$350.00",
-    paymentMethod: "Bank Transfer",
+    title: "Maintance Work",
+    location: "Chennai, Tamil Nadu",
+    description: "A railway project",
+    despartment: "Railway Department",
+    departments: ["Road Department", "Fire Department"],
+    tasks: [],
   },
   {
-    invoice: "INV004",
-    paymentStatus: "Paid",
-    totalAmount: "$450.00",
-    paymentMethod: "Credit Card",
+    title: "Maintance Work",
+    location: "Chennai, Tamil Nadu",
+    description: "A railway project",
+    despartment: "Railway Department",
+    departments: ["Road Department", "Fire Department"],
+    tasks: [],
   },
   {
-    invoice: "INV005",
-    paymentStatus: "Paid",
-    totalAmount: "$550.00",
-    paymentMethod: "PayPal",
-  },
-  {
-    invoice: "INV006",
-    paymentStatus: "Pending",
-    totalAmount: "$200.00",
-    paymentMethod: "Bank Transfer",
-  },
-  {
-    invoice: "INV007",
-    paymentStatus: "Unpaid",
-    totalAmount: "$300.00",
-    paymentMethod: "Credit Card",
+    title: "Maintance Work",
+    location: "Chennai, Tamil Nadu",
+    description: "A railway project",
+    despartment: "Railway Department",
+    departments: ["Road Department", "Fire Department"],
+    tasks: [],
   },
 ];
 
 export default function Projects() {
-  const [notification, setNotification] = useState(false);
+  const navigate = useNavigate();
   const [collapse, setCollpase] = useState(false);
+  const [notification, setNotification] = useState(false);
 
   return (
     <main className="h-screen w-screen overflow-hidden bg-[#D6CFC8]">
@@ -72,7 +78,14 @@ export default function Projects() {
           <Logo />
         </div>
         <div className="absolute left-96 top-7 flex items-center justify-center gap-3 text-sm font-medium">
-          <span className="cursor-pointer">Tasks</span>
+          <span
+            className="cursor-pointer opacity-50"
+            onClick={() => navigate("/dashboard")}
+          >
+            Departments
+          </span>{" "}
+          <FaArrowRightLong />
+          <span className="cursor-pointer">Projects</span>
         </div>
         <div
           onClick={() => setNotification(!notification)}
@@ -87,37 +100,34 @@ export default function Projects() {
       <div className="flex h-full w-full flex-row gap-0">
         <Sidebar collapse={collapse} />
         <div className="h-[92.5vh] w-full overflow-auto rounded-tl-3xl bg-gradient-to-br from-[#EFEAE4] to-[#e3d3c7df] p-12">
-          <h1 className="text-5xl font-semibold">Projects</h1>
+          <h1 className="py-4 text-5xl font-semibold">Projects</h1>
           <Table>
-            <TableCaption>A list of your recent invoices.</TableCaption>
-            <TableHeader>
-              <TableRow>
-                <TableHead className="w-[100px]">Invoice</TableHead>
-                <TableHead>Status</TableHead>
-                <TableHead>Method</TableHead>
-                <TableHead className="text-right">Amount</TableHead>
+            <TableHeader className="rounded-md bg-[#bdb6b18f] text-center font-semibold text-[#434140]">
+              <TableRow className="hover:bg-[#bdb6b18f]">
+                <TableHead>S.No</TableHead>
+                <TableHead>Name</TableHead>
+                <TableHead>Location</TableHead>
+                <TableHead>Description</TableHead>
+                <TableHead>Department</TableHead>
+                <TableHead>Collabrators</TableHead>
               </TableRow>
             </TableHeader>
             <TableBody>
-              {invoices.map((invoice) => (
-                <TableRow key={invoice.invoice}>
-                  <TableCell className="font-medium">
-                    {invoice.invoice}
-                  </TableCell>
-                  <TableCell>{invoice.paymentStatus}</TableCell>
-                  <TableCell>{invoice.paymentMethod}</TableCell>
-                  <TableCell className="text-right">
-                    {invoice.totalAmount}
-                  </TableCell>
+              {invoices.map((project, index) => (
+                <TableRow
+                  className="cursor-pointer"
+                  onClick={() => navigate("/board")}
+                  key={index}
+                >
+                  <TableCell>{index + 1}</TableCell>
+                  <TableCell>{project.title}</TableCell>
+                  <TableCell>{project.location}</TableCell>
+                  <TableCell>{project.description}</TableCell>
+                  <TableCell>{project.despartment}</TableCell>
+                  <TableCell>{project.departments.join(", ")}</TableCell>
                 </TableRow>
               ))}
             </TableBody>
-            <TableFooter>
-              <TableRow>
-                <TableCell colSpan={3}>Total</TableCell>
-                <TableCell className="text-right">$2,500.00</TableCell>
-              </TableRow>
-            </TableFooter>
           </Table>
         </div>
       </div>
