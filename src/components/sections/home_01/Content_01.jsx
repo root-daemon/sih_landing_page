@@ -32,7 +32,7 @@ const Content_01 = () => {
               >
                 {/* Section Content Block */}
                 <div className="flex flex-col items-start justify-start gap-4">
-                  <h2 className="mb-3 text-[4rem]">Functanilties</h2>
+                  <h2 className="mb-3 text-[4rem]">Functionalities</h2>
 
                   <div className="flex w-full items-start justify-start">
                     <div className="flex items-center justify-center gap-2">
@@ -68,7 +68,7 @@ const Content_01 = () => {
                             <div class="items-top relative flex w-[21rem] items-center justify-center space-x-6 rounded-lg bg-white px-2 py-5 leading-none ring-1 ring-gray-900/5">
                               <div class="space-y-2">
                                 <p class="text-2xl font-semibold text-slate-800">
-                                Mappls Geo Loacations
+                                Mappls Geo Locations
                                 </p>
                               </div>
                             </div>
