@@ -55,7 +55,7 @@ const Integrates = () => {
   return (
     <section id="content-intregrates-section">
       <div className="relative z-[1] overflow-hidden bg-colorCodGray text-white">
-        <div className="py-20 xl:py-[130px]">
+        <div className="py-1">
           <div className="global-container">
             <div className="grid grid-cols-1 items-center gap-12 md:grid-cols-2 lg:gap-20 xl:grid-cols-[minmax(0,_1fr)_.8fr] xl:gap-28 xxl:gap-[134px]">
               <div className="jos">
