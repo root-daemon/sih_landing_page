@@ -138,7 +138,7 @@ function BoardComponent() {
 
   return (
     <DragDropContext onDragEnd={onDragEnd}>
-      <div className="mt-10 flex w-full gap-2">
+      <div className="mt-10 min-h-[200px] flex w-full gap-2">
         {data &&
           data.columnOrder.map((columnId) => {
             const column = data.columns[columnId];

@@ -22,9 +22,16 @@ export default function Board() {
           </h1>
         </div>
         <div className="absolute left-96 top-7 flex items-center justify-center gap-3 text-sm font-medium">
-          <span
+        <span
             className="cursor-pointer opacity-50"
             onClick={() => navigate("/dashboard")}
+          >
+            Departments
+          </span>{" "}
+          <FaArrowRightLong />
+          <span
+            className="cursor-pointer opacity-50"
+            onClick={() => navigate("/projects")}
           >
             Tasks
           </span>{" "}
@@ -41,7 +48,7 @@ export default function Board() {
       </header>
       <Notification notification={notification} />
       <div className="flex h-full w-full flex-row gap-0">
-        <Sidebar collapse={collapse} />
+        <Sidebar collapse={collapse} active={"tasks"} />
         <div className="h-full w-full overflow-auto rounded-tl-3xl bg-gradient-to-br from-[#EFEAE4] to-[#e3d3c7df] p-12 pb-0">
           <h1 className="max-w-[700px] text-4xl font-semibold">
             Traffic Management and Transport Department

@@ -66,7 +66,7 @@ export default function MapPage() {
       </header>
       <Notification notification={notification} />
       <div className="flex flex-row">
-      <Sidebar collapse={true} />
+      <Sidebar collapse={true} active={"maps"} />
       <div
         id="map"
         style={{ width: "100%", height: "92vh", display: "inline-block", zIndex: 0 }}
