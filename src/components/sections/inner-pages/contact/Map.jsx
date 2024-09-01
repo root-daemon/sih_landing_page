@@ -26,30 +26,30 @@ const Map = () => {
                     </h2>
                   </div>
 
-                  <div className="ml-10 mt-12 flex items-center justify-center gap-3">
-                    <div className="block max-w-sm rounded-lg border border-orange-500 bg-white p-3 shadow hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-                      <h5 className="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
+                  <div className="ml-10 mt-12 flex flex-col items-center justify-center gap-3">
+                    <div className="items-center justify-around w-full rounded-lg flex-row flex border border-orange-500 border-opacity-10 bg-opacity-5 bg-white p-3 shadow hover:bg-opacity-20">
+                      <h5 className="text-xl font-bold tracking-tight text-white">
                         Across States
                       </h5>
-                      <p className="font-normal text-gray-700 dark:text-gray-400">
+                      <p className="font-normal text-gray-400">
                         20+
                       </p>
                     </div>
 
-                    <div className="block max-w-sm rounded-lg border border-gray-200 bg-orange-500 p-3 shadow hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-                      <h5 className="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-                        Across cities
+                    <div className="items-center justify-around w-full rounded-lg flex-row flex border border-orange-500 border-opacity-10 bg-opacity-5 bg-orange-500 p-3 shadow hover:bg-opacity-20">
+                      <h5 className="text-xl font-bold tracking-tight text-white">
+                        Across departments
                       </h5>
-                      <p className="font-normal text-gray-700 dark:text-gray-400">
-                        100+
+                      <p className="font-normal text-gray-400">
+                        11+
                       </p>
                     </div>
 
-                    <div className="block max-w-sm rounded-lg border border-orange-500 bg-white p-3 shadow hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-                      <h5 className="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
+                    <div className="items-center justify-around w-full rounded-lg flex-row flex border border-orange-500 border-opacity-10 bg-opacity-5 bg-white p-3 shadow hover:bg-opacity-20">
+                      <h5 className="text-xl font-bold tracking-tight text-white">
                         Across cities
                       </h5>
-                      <p className="font-normal text-gray-700 dark:text-gray-400">
+                      <p className="font-normal text-gray-400">
                         100+
                       </p>
                     </div>
