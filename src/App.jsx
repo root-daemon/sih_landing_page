@@ -23,7 +23,6 @@ import Dashboard from "./pages/common/Dashboard";
 import Board from "./pages/common/Board";
 
 function App() {
-  // Init JOS Animation
   useJOSAnimation();
 
   return (
