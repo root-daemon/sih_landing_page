@@ -27,7 +27,7 @@ const Content_02 = () => {
                 {/* Section Content Block */}
                 <div className="mb-6">
                   
-                  <h2 className="text-6xl">Plan it, Manage and Push it.</h2>
+                  <h2 className="text-6xl">Plan it, Manage and Track it.</h2>
                 </div>
                 {/* Section Content Block */}
                 <div className="text-lg leading-[1.4] lg:text-[21px] text-justify">

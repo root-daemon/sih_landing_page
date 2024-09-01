@@ -74,7 +74,7 @@ const Integrates = () => {
                     </span>
 
                     <div className="flex flex-col gap-1">
-                      <span className="font-semibold">
+                      <span className="font-semibold text-orange-400">
                         {" "}
                         Integrated Dashboard:
                       </span>{" "}
@@ -89,7 +89,7 @@ const Integrates = () => {
                     </span>
 
                     <div className="flex flex-col gap-1">
-                      <span className="font-semibold">
+                      <span className="font-semibold text-orange-400">
                         Mandatory Coordination Meetings:
                       </span>{" "}
                       Ensure alignment and avoid conflicts.
@@ -102,7 +102,7 @@ const Integrates = () => {
                     </span>
 
                     <div className="flex flex-col gap-1">
-                      <span className="font-semibold">
+                      <span className="font-semibold text-orange-400">
                         Real-time Monitoring:
                       </span>{" "}
                       Track progress, identify issues, and enable quick
@@ -116,7 +116,7 @@ const Integrates = () => {
                     </span>
 
                     <div className="flex flex-col gap-1">
-                      <span className="font-semibold">
+                      <span className="font-semibold text-orange-400">
                         Inter-Departmental Task Forces:
                       </span>{" "}
                       Facilitate collaboration and problem-solving.
@@ -129,7 +129,7 @@ const Integrates = () => {
                     </span>
 
                     <div className="flex flex-col gap-1">
-                      <span className="font-semibold">
+                      <span className="font-semibold text-orange-400">
                         Simplified Approval Processes:
                       </span>{" "}
                       Streamline procedures for faster <br /> decision-making.

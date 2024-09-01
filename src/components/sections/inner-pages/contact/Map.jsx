@@ -36,7 +36,7 @@ const Map = () => {
                       </p>
                     </div>
 
-                    <div className="items-center justify-around w-full rounded-lg flex-row flex border border-orange-500 border-opacity-10 bg-opacity-5 bg-orange-500 p-3 shadow hover:bg-opacity-20">
+                    <div className="items-center justify-around w-full rounded-lg flex-row flex border border-orange-500 border-opacity-10 bg-opacity-5 bg-orange-500 p-3 px-10 shadow hover:bg-opacity-20">
                       <h5 className="text-xl font-bold tracking-tight text-white">
                         Across departments
                       </h5>
