@@ -1,5 +1,6 @@
 import { useState } from "react";
 
+
 import Card from "../../components/Card";
 import { BiTrafficCone } from "react-icons/bi";
 import { TbLayoutSidebarRightCollapse } from "react-icons/tb";
@@ -49,7 +50,6 @@ export default function Dashboard() {
               }}
               icon={<BiTrafficCone className="text-2xl" />}
             />
-
             <Card
               title="Traffic Management and Transport Department"
               tasks={[
