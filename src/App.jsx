@@ -6,14 +6,13 @@ import Blog from "./pages/common/Blog";
 import Contact from "./pages/common/Contact";
 import Error_404 from "./pages/common/Error_404";
 import Faq_02 from "./pages/common/faq/faq_02/Faq_02";
-// import Login from './pages/common/Login';
 import Portfolio_details from "./pages/common/Portfolio_details";
 import Portfolio from "./pages/common/Portfolio";
 import Pricing from "./pages/common/Pricing";
 import Reset_password from "./pages/common/Reset_password";
 import Services_Details from "./pages/common/Service_Details";
 import Services from "./pages/common/Services";
-import Signup from "./pages/common/Signup";
+import Login from "./pages/common/Login";
 import Team_details from "./pages/common/Team_details";
 import Team from "./pages/common/team/Team";
 import useJOSAnimation from "./hooks/useJOSAnimation";
@@ -35,10 +34,10 @@ function App() {
         <Route path="maps" element={<MapPage />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/resource" element={<Resources />} />
+        <Route path="login" element={<Login />} />
 
         <Route element={<Layout />}>
           <Route path="/" element={<Home_01 />} />
-          <Route path="signup" element={<Signup />} />
           <Route path="about" element={<About />} />
           <Route path="contact" element={<Contact />} />
           <Route path="blog" element={<Blog />} />
