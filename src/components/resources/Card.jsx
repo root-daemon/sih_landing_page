@@ -49,7 +49,7 @@ export default function Card({ department, icon, skilled, unskilled }) {
       <div className="ml-2 flex flex-col">
         <div className="ml-2 mt-2 flex flex-col gap-4 border-l-2 border-dashed border-[#595754] border-opacity-30 pl-4">
           {/* Skilled Select */}
-          <div>
+          <div className="flex flex-row">
             <Select
               onValueChange={(value) => handleSelectChange("skilled", value)}
             >
@@ -68,8 +68,7 @@ export default function Card({ department, icon, skilled, unskilled }) {
               </SelectContent>
             </Select>
             {selected.skilled && (
-              <div className="mt-2 flex items-center gap-2">
-                <span>{selected.skilled}:</span>
+              <div className="mt-2 flex w-1/2 items-center justify-center gap-2">
                 <button
                   className="px-2"
                   onClick={() => handleQuantityChange("skilled", -1)}
@@ -89,7 +88,7 @@ export default function Card({ department, icon, skilled, unskilled }) {
           </div>
 
           {/* Unskilled Select */}
-          <div>
+          <div className="flex flex-row">
             <Select
               onValueChange={(value) => handleSelectChange("unskilled", value)}
             >
@@ -108,8 +107,7 @@ export default function Card({ department, icon, skilled, unskilled }) {
               </SelectContent>
             </Select>
             {selected.unskilled && (
-              <div className="mt-2 flex items-center gap-2">
-                <span>{selected.unskilled}:</span>
+              <div className="mt-2 flex w-1/2 items-center justify-center gap-2">
                 <button
                   className="px-2"
                   onClick={() => handleQuantityChange("unskilled", -1)}
