@@ -24,7 +24,7 @@ const Hero = () => {
                   data-jos_animation="fade"
                 >
                   <Link
-                    to="#"
+                  to="#"
                     className="button rounded-[50px] border-2 border-black bg-black py-4 text-white after:bg-colorOrangyRed hover:border-colorOrangyRed hover:text-white"
                   >
                     Get started for free

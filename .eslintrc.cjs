@@ -1,22 +1,26 @@
 module.exports = {
   root: true,
   env: { browser: true, es2020: true },
-  extends: [
-    'eslint:recommended',
-    'plugin:react/recommended',
-    'plugin:react/jsx-runtime',
-    'plugin:react-hooks/recommended',
-  ],
-  ignorePatterns: ['dist', '.eslintrc.cjs'],
-  parserOptions: { ecmaVersion: 'latest', sourceType: 'module' },
-  settings: { react: { version: '18.2' } },
-  plugins: ['react-refresh'],
-  rules: {
-    "react/prop-types": "off",
-    'react-refresh/only-export-components': [
-      'warn',
-      { allowConstantExport: true },
-    ],
-    "react/no-unescaped-entities": 0
+  extends: ["next/core-web-vitals", "airbnb", "airbnb-typescript", "prettier"],
+  ignorePatterns: ["dist", ".eslintrc.cjs"],
+  parserOptions: {
+    project: ["./tsconfig.json", "next.config.mjs", "next-sitemap.config.js"],
   },
-}
+  settings: { react: { version: "18.2" } },
+  plugins: ["react-refresh"],
+  rules: {
+    "react/require-default-props": "off",
+    "react/jsx-props-no-spreading": "off",
+    "react/jsx-no-bind": "off",
+    "no-console": "off",
+    "no-plusplus": "warn",
+    "import/prefer-default-export": "off",
+    "no-restricted-syntax": "warn",
+    "no-loop-func": "warn",
+    "no-await-in-loop": "off",
+    "no-param-reassign": "off",
+    "react/no-array-index-key": "off",
+    "no-alert": "off",
+    "no-restricted-globals": "warn",
+  },
+};
