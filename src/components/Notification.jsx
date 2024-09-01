@@ -3,7 +3,7 @@ import Man from "./Man";
 export default function Notification({ notification }) {
   return (
     <nav
-      className={`${notification ? "translate-x-0" : "translate-x-[1000px]"} shadow-xl fixed right-0 top-0 h-screen w-[400px] origin-right bg-[#F5F3E6] p-7 px-9 transition-all duration-300`}
+      className={`${notification ? "translate-x-0" : "translate-x-[1000px]"} z-10 shadow-xl fixed right-0 top-0 h-screen w-[400px] origin-right bg-[#F5F3E6] p-7 px-9 transition-all duration-300`}
     >
       <h2 className="text-3xl font-semibold underline decoration-[#EC734A]">
         Notification

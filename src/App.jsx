@@ -21,6 +21,7 @@ import Layout from "./components/layout/Layout";
 import Faq_01 from "./pages/common/faq/faq_01/Faq_01";
 import Dashboard from "./pages/common/Dashboard";
 import Board from "./pages/common/Board";
+import MapPage from "./pages/common/MapPage";
 
 function App() {
   useJOSAnimation();
@@ -30,6 +31,7 @@ function App() {
       <Routes>
         <Route path="dashboard" element={<Dashboard />} />
         <Route path="board" element={<Board />} />
+        <Route path="maps" element={<MapPage />} />
         <Route element={<Layout />}>
           <Route path="/" element={<Home_01 />} />
           <Route path="signup" element={<Signup />} />

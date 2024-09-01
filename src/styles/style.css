@@ -15,6 +15,10 @@ body {
   color: rgb(25 25 25 / var(--tw-text-opacity));
 }
 
+.mapboxgl-canvas {
+  border-top-left-radius: 1.5rem;
+}
+
 h1,
 h2,
 h3,
