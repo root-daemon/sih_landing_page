@@ -1,7 +1,7 @@
 import { useState } from "react";
 
-import Card from "../../components/Card";
-import { BiTrafficCone } from "react-icons/bi";
+import { FaArrowRightLong } from "react-icons/fa6";
+
 import { TbLayoutSidebarRightCollapse } from "react-icons/tb";
 import Notification from "../../components/Notification";
 import Logo from "../../components/logo/Logo";
@@ -17,6 +17,7 @@ import {
   TableRow,
 } from "../../components/ui/table";
 import Header from "../../components/Header";
+import { useNavigate } from "react-router-dom";
 //s.no
 //description
 //depts (created by)
@@ -24,7 +25,7 @@ import Header from "../../components/Header";
 //
 const invoices = [
   {
-    title: "Project Kickoff",
+    title: "Maintance Work",
     location: "Chennai, Tamil Nadu",
     description: "A railway project",
     despartment: "Railway Department",
@@ -32,7 +33,7 @@ const invoices = [
     tasks: [],
   },
   {
-    title: "Project Kickoff",
+    title: "Maintance Work",
     location: "Chennai, Tamil Nadu",
     description: "A railway project",
     despartment: "Railway Department",
@@ -40,7 +41,7 @@ const invoices = [
     tasks: [],
   },
   {
-    title: "Project Kickoff",
+    title: "Maintance Work",
     location: "Chennai, Tamil Nadu",
     description: "A railway project",
     despartment: "Railway Department",
@@ -48,7 +49,7 @@ const invoices = [
     tasks: [],
   },
   {
-    title: "Project Kickoff",
+    title: "Maintance Work",
     location: "Chennai, Tamil Nadu",
     description: "A railway project",
     despartment: "Railway Department",
@@ -56,7 +57,7 @@ const invoices = [
     tasks: [],
   },
   {
-    title: "Project Kickoff",
+    title: "Maintance Work",
     location: "Chennai, Tamil Nadu",
     description: "A railway project",
     despartment: "Railway Department",
@@ -66,6 +67,7 @@ const invoices = [
 ];
 
 export default function Projects() {
+  const navigate = useNavigate();
   const [collapse, setCollpase] = useState(false);
   const [notification, setNotification] = useState(false);
 
@@ -76,7 +78,14 @@ export default function Projects() {
           <Logo />
         </div>
         <div className="absolute left-96 top-7 flex items-center justify-center gap-3 text-sm font-medium">
-          <span className="cursor-pointer">Board</span>
+          <span
+            className="cursor-pointer opacity-50"
+            onClick={() => navigate("/dashboard")}
+          >
+            Departments
+          </span>{" "}
+          <FaArrowRightLong />
+          <span className="cursor-pointer">Projects</span>
         </div>
         <div
           onClick={() => setNotification(!notification)}
@@ -94,7 +103,7 @@ export default function Projects() {
           <h1 className="py-4 text-5xl font-semibold">Projects</h1>
           <Table>
             <TableHeader className="rounded-md bg-[#bdb6b18f] text-center font-semibold text-[#434140]">
-              <TableRow>
+              <TableRow className="hover:bg-[#bdb6b18f]">
                 <TableHead>S.No</TableHead>
                 <TableHead>Name</TableHead>
                 <TableHead>Location</TableHead>
@@ -105,7 +114,11 @@ export default function Projects() {
             </TableHeader>
             <TableBody>
               {invoices.map((project, index) => (
-                <TableRow key={index}>
+                <TableRow
+                  className="cursor-pointer"
+                  onClick={() => navigate("/board")}
+                  key={index}
+                >
                   <TableCell>{index + 1}</TableCell>
                   <TableCell>{project.title}</TableCell>
                   <TableCell>{project.location}</TableCell>
