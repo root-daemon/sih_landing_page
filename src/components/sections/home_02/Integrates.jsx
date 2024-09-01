@@ -5,6 +5,10 @@ import { FaCity } from "react-icons/fa6";
 import { RiHospitalFill, RiRoadsterFill } from "react-icons/ri";
 import { TbBuildingSkyscraper } from "react-icons/tb";
 
+import { MdSpaceDashboard } from "react-icons/md";
+import { FaUserGroup } from "react-icons/fa6";
+
+
 // Component for displaying an individual icon box
 const IconBox = ({ Icon }) => (
   <div className="flex h-[105px] w-[105px] items-center justify-center rounded-[10px] bg-white p-5">
@@ -60,32 +64,73 @@ const Integrates = () => {
                 {/* Section Content Block */}
 
                 <div className="my-12 flex flex-col gap-y-6 text-xl font-normal leading-[1.28] tracking-[1px] lg:text-[18px]">
-                  <div className="white-glassmorphism relative flex flex-col gap-1 py-4 pl-[35px] after:absolute after:left-[10px] after:top-3 after:h-[8px] after:w-[8px] after:rounded-[50%]">
-                    <span className="font-semibold">Integrated Dashboard:</span>{" "}
-                    Centralize project information for better visibility and
-                    coordination.
+                  <div className="white-glassmorphism relative flex flex-row items-center justify-start gap-4 py-4 pl-[35px] after:absolute after:left-[10px] after:top-3 after:h-[8px] after:w-[8px] after:rounded-[50%]">
+                    <span className="rounded-full bg-[#cb7368] p-2 text-2xl text-white">
+                      {" "}
+                      <MdSpaceDashboard />
+                    </span>
+
+                    <div className="flex flex-col gap-1">
+                      <span className="font-semibold">
+                        {" "}
+                        Integrated Dashboard:
+                      </span>{" "}
+                      Centralize project information for better visibility and
+                      coordination.
+                    </div>
                   </div>
-                  <div className="white-glassmorphism relative flex flex-col gap-1 py-4 pl-[35px] after:absolute after:left-[10px] after:top-3 after:h-[8px] after:w-[8px] after:rounded-[50%]">
-                    <span className="font-semibold">
-                      Mandatory Coordination Meetings:
-                    </span>{" "}
-                    Ensure alignment and avoid conflicts.
+                  <div className="white-glassmorphism relative flex flex-row items-center justify-start gap-4 py-4 pl-[35px] after:absolute after:left-[10px] after:top-3 after:h-[8px] after:w-[8px] after:rounded-[50%]">
+                    <span className="rounded-full bg-[#689dcb] p-2 text-2xl text-white">
+                      {" "}
+                      <FaUserGroup />
+                    </span>
+
+                    <div className="flex flex-col gap-1">
+                      <span className="font-semibold">
+                        Mandatory Coordination Meetings:
+                      </span>{" "}
+                      Ensure alignment and avoid conflicts.
+                    </div>
                   </div>
-                  <div className="white-glassmorphism relative flex flex-col gap-1 py-4 pl-[35px] after:absolute after:left-[10px] after:top-3 after:h-[8px] after:w-[8px] after:rounded-[50%]">
-                    <span className="font-semibold">Real-time Monitoring:</span>{" "}
-                    Track progress, identify issues, and enable quick responses.
+                  <div className="white-glassmorphism relative flex flex-row items-center justify-start gap-4 py-4 pl-[35px] after:absolute after:left-[10px] after:top-3 after:h-[8px] after:w-[8px] after:rounded-[50%]">
+                    <span className="rounded-full bg-[#68cb87] p-2 text-2xl text-white">
+                      {" "}
+                      <MdSpaceDashboard />
+                    </span>
+
+                    <div className="flex flex-col gap-1">
+                      <span className="font-semibold">
+                        Real-time Monitoring:
+                      </span>{" "}
+                      Track progress, identify issues, and enable quick
+                      responses.
+                    </div>
                   </div>
-                  <div className="white-glassmorphism relative flex flex-col gap-1 py-4 pl-[35px] after:absolute after:left-[10px] after:top-3 after:h-[8px] after:w-[8px] after:rounded-[50%]">
-                    <span className="font-semibold">
-                      Inter-Departmental Task Forces:
-                    </span>{" "}
-                    Facilitate collaboration and problem-solving.
+                  <div className="white-glassmorphism relative flex flex-row items-center justify-start gap-4 py-4 pl-[35px] after:absolute after:left-[10px] after:top-3 after:h-[8px] after:w-[8px] after:rounded-[50%]">
+                    <span className="rounded-full bg-[#a768cb] p-2 text-2xl text-white">
+                      {" "}
+                      <MdSpaceDashboard />
+                    </span>
+
+                    <div className="flex flex-col gap-1">
+                      <span className="font-semibold">
+                        Inter-Departmental Task Forces:
+                      </span>{" "}
+                      Facilitate collaboration and problem-solving.
+                    </div>
                   </div>
-                  <div className="white-glassmorphism relative flex flex-col gap-1 py-4 pl-[35px] after:absolute after:left-[10px] after:top-3 after:h-[8px] after:w-[8px] after:rounded-[50%]">
-                    <span className="font-semibold">
-                      Simplified Approval Processes:
-                    </span>{" "}
-                    Streamline procedures for faster <br /> decision-making.
+                  <div className="white-glassmorphism relative flex flex-row items-center justify-start gap-4 py-4 pl-[35px] after:absolute after:left-[10px] after:top-3 after:h-[8px] after:w-[8px] after:rounded-[50%]">
+                    <span className="rounded-full bg-[#becb68] p-2 text-2xl text-white">
+                      {" "}
+                      <MdSpaceDashboard />
+                    </span>
+
+                    <div className="flex flex-col gap-1">
+                      <span className="font-semibold">
+                        Simplified Approval Processes:
+                      </span>{" "}
+                      Streamline procedures for faster <br /> decision-making.
+                    </div>
                   </div>
                 </div>
               </div>
