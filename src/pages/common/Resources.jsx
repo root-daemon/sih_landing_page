@@ -36,17 +36,35 @@ export default function Resources() {
           <h1 className="max-w-[800px] text-5xl font-semibold">Resource</h1>
           <div className="mt-6 grid grid-cols-cards gap-5">
             <Card
-              department="Plumbing Department"
+              department="Staffs/Personals"
+              name1="skilled"
               skilled={[
                 { name: "Electrical Engineer", qty: 12 },
                 { name: "Civil Engineer", qty: 123 },
                 { name: "Contractor", qty: 123 },
               ]}
+              name2="unskilled"
               unskilled={[
                 { name: "Customer Service", qty: 12 },
                 { name: "Support Staffs", qty: 24 },
                 { name: "Clerical", qty: 24 },
                 { name: "Novice", qty: 53 },
+              ]}
+              icon={<BiStreetView className="text-2xl" />}
+            />
+            <Card
+              department="Machinery"
+              name1="Construction Machine"
+              skilled={[
+                { name: "Bulldozer", qty: 12 },
+                { name: "Excavator", qty: 10 },
+                { name: "JCB", qty: 24 },
+              ]}
+              name2="Transport Vehicles"
+              unskilled={[
+                { name: "Trucks", qty: 12 },
+                { name: "Bus", qty: 24 },
+                { name: "Car", qty: 24 },
               ]}
               icon={<BiStreetView className="text-2xl" />}
             />

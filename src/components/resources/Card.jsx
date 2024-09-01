@@ -10,7 +10,14 @@ import {
   SelectValue,
 } from "../ui/select";
 
-export default function Card({ department, icon, skilled, unskilled }) {
+export default function Card({
+  department,
+  icon,
+  skilled,
+  unskilled,
+  name1,
+  name2,
+}) {
   const navigate = useNavigate();
 
   // State to manage selected items and quantities
@@ -54,11 +61,11 @@ export default function Card({ department, icon, skilled, unskilled }) {
               onValueChange={(value) => handleSelectChange("skilled", value)}
             >
               <SelectTrigger className="w-[180px]">
-                <SelectValue placeholder="Skilled" />
+                <SelectValue placeholder={name1} />
               </SelectTrigger>
               <SelectContent>
                 <SelectGroup>
-                  <SelectLabel>Skilled</SelectLabel>
+                  <SelectLabel>{name1}</SelectLabel>
                   {skilled.map((employ) => (
                     <SelectItem key={employ.name} value={employ.name}>
                       {employ.name}
@@ -93,11 +100,11 @@ export default function Card({ department, icon, skilled, unskilled }) {
               onValueChange={(value) => handleSelectChange("unskilled", value)}
             >
               <SelectTrigger className="w-[180px]">
-                <SelectValue placeholder="Unskilled" />
+                <SelectValue placeholder={name2} />
               </SelectTrigger>
               <SelectContent>
                 <SelectGroup>
-                  <SelectLabel>Unskilled</SelectLabel>
+                  <SelectLabel>{name2}</SelectLabel>
                   {unskilled.map((employ) => (
                     <SelectItem key={employ.name} value={employ.name}>
                       {employ.name}
