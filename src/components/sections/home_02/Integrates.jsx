@@ -7,6 +7,9 @@ import { TbBuildingSkyscraper } from "react-icons/tb";
 
 import { MdSpaceDashboard } from "react-icons/md";
 import { FaUserGroup } from "react-icons/fa6";
+import { GiSattelite } from "react-icons/gi";
+import { BiNotepad } from "react-icons/bi";
+import { IoCheckmarkDoneCircle } from "react-icons/io5";
 
 
 // Component for displaying an individual icon box
@@ -95,7 +98,7 @@ const Integrates = () => {
                   <div className="white-glassmorphism relative flex flex-row items-center justify-start gap-4 py-4 pl-[35px] after:absolute after:left-[10px] after:top-3 after:h-[8px] after:w-[8px] after:rounded-[50%]">
                     <span className="rounded-full bg-[#68cb87] p-2 text-2xl text-white">
                       {" "}
-                      <MdSpaceDashboard />
+                      <GiSattelite />
                     </span>
 
                     <div className="flex flex-col gap-1">
@@ -109,7 +112,7 @@ const Integrates = () => {
                   <div className="white-glassmorphism relative flex flex-row items-center justify-start gap-4 py-4 pl-[35px] after:absolute after:left-[10px] after:top-3 after:h-[8px] after:w-[8px] after:rounded-[50%]">
                     <span className="rounded-full bg-[#a768cb] p-2 text-2xl text-white">
                       {" "}
-                      <MdSpaceDashboard />
+                      <BiNotepad />
                     </span>
 
                     <div className="flex flex-col gap-1">
@@ -122,7 +125,7 @@ const Integrates = () => {
                   <div className="white-glassmorphism relative flex flex-row items-center justify-start gap-4 py-4 pl-[35px] after:absolute after:left-[10px] after:top-3 after:h-[8px] after:w-[8px] after:rounded-[50%]">
                     <span className="rounded-full bg-[#becb68] p-2 text-2xl text-white">
                       {" "}
-                      <MdSpaceDashboard />
+                      <IoCheckmarkDoneCircle />
                     </span>
 
                     <div className="flex flex-col gap-1">
