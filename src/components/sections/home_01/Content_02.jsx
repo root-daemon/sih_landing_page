@@ -1,3 +1,4 @@
+import demo from '../../../assets/img/demo.jpeg'
 const Content_02 = () => {
   return (
     <>
@@ -14,7 +15,7 @@ const Content_02 = () => {
                 data-jos_animation="fade-left"
               >
                 <img
-                  src="assets/img/todolist.jpeg"
+                  src={demo}
                   alt="content-image-2"
                   width="526"
                   height="450"
@@ -32,13 +33,13 @@ const Content_02 = () => {
                 {/* Section Content Block */}
                 <div className="text-lg leading-[1.4] lg:text-[21px] text-justify">
                   <p className="mb-7 last:mb-0">
-                  Providing a clear board layout, you can easily visualize the progress of your initiatives. Assign tasks, track their status, and identify potential bottlenecks effortlessly. Designed to streamline your workflow and enhance productivity.
+                  We offer a platform that strengthens interdepartmental collaboration on infrastructure projects with <span className="text-orange-600 font-semibold"> effective tracking,</span> <span className="text-orange-600 font-semibold"> resource management,</span> and <span className="text-orange-600 font-semibold">instant alerts.</span> It features a communication forum for quick decisions, enhancing transparency and productivity.
                   </p>
                   <ul className="flex flex-col gap-y-5 font-dmSans text-xl leading-tight tracking-tighter text-black lg:mt-12 lg:text-[28px]">
                     <li className="flex items-start gap-x-3">
                       <div className="mt-[2.5px] h-[30px] w-[30px]">
                         <img
-                          src="assets/img/th-1/check-circle.svg"
+                          src={"assets/img/th-1/check-circle.svg"}
                           alt="check-circle"
                           width="30"
                           height="30"
