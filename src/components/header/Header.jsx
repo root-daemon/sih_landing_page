@@ -1,5 +1,4 @@
 import { useState } from "react";
-
 import Logo from "../logo/Logo";
 
 // eslint-disable-next-line react/prop-types
@@ -20,7 +19,8 @@ const Header = ({ loginCSS, signupCSS, navColor, light }) => {
 
           {/* Header Navigation */}
           {/* Header User Event */}
-          <div className="flex items-center gap-6">
+          <div className="flex justify-center items-center gap-3">
+          <div className="flex items-center ">
             <a href="/dashboard" className={loginCSS}>
               Dashboard
             </a>
@@ -34,6 +34,23 @@ const Header = ({ loginCSS, signupCSS, navColor, light }) => {
                 <span />
               </button>
             </div>
+          </div>
+
+          <div className="flex items-center gap-6">
+            <a href="/login" className={loginCSS}>
+              Log in
+            </a>
+
+            {/* Responsive Off-canvas Menu Button */}
+            <div className="block lg:hidden">
+              <button
+                onClick={() => setMobileMenu(true)}
+                className={`mobile-menu-trigger ${light ? "is-white" : "is-black"}`}
+              >
+                <span />
+              </button>
+            </div>
+          </div>
           </div>
           {/* Header User Event */}
         </div>
