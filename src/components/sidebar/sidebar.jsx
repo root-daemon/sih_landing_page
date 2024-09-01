@@ -1,19 +1,19 @@
 import { BsTrello } from "react-icons/bs";
 import { FaMapLocation } from "react-icons/fa6";
 
-export default function Sidebar({ collapse }) {
+export default function Sidebar({ collapse, active }) {
   return (
     <div
       className={`flex h-full ${collapse ? "w-[90px]" : "w-[250px]"} flex-col gap-3 pl-6 pt-6`}
     >
-      <button className="flex items-center justify-start gap-3 rounded-l-xl bg-[#EFEAE4] px-4 py-3 text-xl font-medium text-black">
+      <a href="/dashboard" className={`flex items-center justify-start gap-3 px-4 py-3 text-xl font-medium text-black ${active === "tasks" ? "rounded-l-xl bg-[#EFEAE4]": ""}`}>
         <BsTrello />
         {!collapse && <span>Tasks</span>}
-      </button>
-      <button className="flex items-center justify-start gap-3 px-4 py-3 text-xl font-medium text-black">
+      </a>
+      <a href="/maps" className={`flex items-center justify-start gap-3 px-4 py-3 text-xl font-medium text-black ${active === "maps" ? "rounded-l-xl bg-[#EFEAE4]": ""}`}>
         <FaMapLocation />
         {!collapse && <span>Map</span>}
-      </button>
+      </a>
     </div>
   );
 }
