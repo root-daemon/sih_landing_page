@@ -122,7 +122,7 @@ export default function Card({
                 >
                   -
                 </button>
-                <span>{quantities.unskilled}</span>
+                <span className="font-semibold">{quantities.unskilled}</span>
                 <button
                   className="px-2"
                   onClick={() => handleQuantityChange("unskilled", 1)}
