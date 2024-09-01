@@ -18,18 +18,18 @@ export default function PageHeader() {
         <Logo />
       </div>
       <div className="absolute left-96 top-7 flex items-center justify-center gap-3 text-sm font-medium">
-        {path === "/dashboard" ||
+        {(path === "/dashboard" ||
           path === "/projects" ||
-          (path === "/board" && (
+          path === "/board") && (
             <span
               className={`cursor-pointer ${path === "/dashboard" ? "opacity-100" : "opacity-50"}`}
               onClick={() => navigate("/dashboard")}
             >
               Departments
             </span>
-          ))}{" "}
-        {path === "/projects" ||
-          (path === "/board" && (
+          )}{" "}
+        {(path === "/projects" ||
+          path === "/board") && (
             <>
               <FaArrowRightLong />
               <span
@@ -39,7 +39,7 @@ export default function PageHeader() {
                 Projects
               </span>
             </>
-          ))}{" "}
+          )}{" "}
         {path === "/board" && (
           <>
             <FaArrowRightLong />{" "}
