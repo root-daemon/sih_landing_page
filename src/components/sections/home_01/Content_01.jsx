@@ -125,7 +125,7 @@ const Content_01 = () => {
                       </div>
                       <div>
                         <p className="mr-2 w-64 text-sm">
-                        Send location-based alerts for nearby projects or meetings to boost engagement.
+                        A web solution supporting 32 languages for seamless, barrier-free government coordination.
                         </p>
                       </div>
                     </div>
