@@ -6,9 +6,9 @@ const Hero = () => {
     <>
       {/*...::: Hero Section Start :::... */}
       <section id="section-hero">
-        <div className="relative z-[1] overflow-hidden rounded-bl-[30px] rounded-br-[30px] bg-colorLinenRuffle pb-20 pt-28 lg:rounded-bl-[50px] lg:rounded-br-[50px] lg:pb-24 lg:pt-32 xl:pt-28 xxl:pb-[133px] xxl:pt-[195px]">
+        <div className="relative z-[1] overflow-hidden rounded-bl-[30px] rounded-br-[30px] bg-colorLinenRuffle pb-20 pt-28 lg:rounded-bl-[50px] lg:rounded-br-[50px] lg:pb-24 lg:pt-32 xl:pt-28 xxl:pb-[133px] xxl:pt-[85px]">
           <div className="global-container">
-            <div className="flex px-20">
+            <div className="flex px-20 pb-5">
               <div className="mb-14 mt-16 flex flex-col items-center lg:mb-20">
                 <h1 className="jos slide-from-bottom mb-6 max-w-[510px] text-6xl lg:max-w-[768px] xl:max-w-[1076px]">
                   India's Infrastructure Revolution{" "}
@@ -27,7 +27,7 @@ const Hero = () => {
                   to="#"
                     className="button rounded-[50px] border-2 border-black bg-black py-4 text-white after:bg-colorOrangyRed hover:border-colorOrangyRed hover:text-white"
                   >
-                    Get started for free
+                   See Projects
                   </Link>
                   <Link
                     to="#"
