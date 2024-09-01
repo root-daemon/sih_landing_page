@@ -38,7 +38,7 @@ const Login = () => {
     <>
       <main className='main-wrapper relative overflow-hidden bg-[#EFEAE3]'>
         {/*...::: Login Section Start :::... */}
-        <div className='mt-6 ml-[4.2rem] '>
+        <div className='mt-5 ml-[4.3rem] '>
           <LogoDark />
         </div>
         <section id='login-section'>
@@ -46,7 +46,7 @@ const Login = () => {
             <img className='w-[18rem]' src={signup} alt="" />
           </div>
           {/* Section Spacer */}
-          <div className='py-20 pt-24 xl:pb-[150px] xl:pt-[30px]'>
+          <div className='py-20 pt-14 xl:pb-[150px] xl:pt-[10px]'>
             {/* Section Container */}
             <div className='global-container'>
               <div className='mx-auto max-w-[610px] text-center'>
@@ -72,7 +72,7 @@ const Login = () => {
                           value={input.email}
                           onChange={handleInput}
                           id='login-email'
-                          placeholder='XXXXXX'
+                          placeholder='XXXXXXXXXXXXX'
                           className='rounded-[10px] border border-gray-300 bg-white px-6 py-[18px] font-bold text-black outline-none transition-all placeholder:text-slate-500 focus:border-colorOrangyRed'
                           required=''
                         />
