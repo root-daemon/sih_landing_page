@@ -77,7 +77,7 @@ export default function Card({
             {selected.skilled && (
               <div className="mt-2 flex w-1/2 items-center justify-center gap-2">
                 <button
-                  className="px-2"
+                  className="px-2 text-[#EC5454]"
                   onClick={() => handleQuantityChange("skilled", -1)}
                   disabled={quantities.skilled <= 0}
                 >
@@ -85,7 +85,7 @@ export default function Card({
                 </button>
                 <span>{quantities.skilled}</span>
                 <button
-                  className="px-2"
+                  className="px-2 text-[#56A630]"
                   onClick={() => handleQuantityChange("skilled", 1)}
                 >
                   +

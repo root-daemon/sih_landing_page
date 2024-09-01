@@ -10,7 +10,7 @@ import Sidebar from "../../components/sidebar/sidebar";
 
 export default function Resources() {
   const [notification, setNotification] = useState(false);
-  const [collapse, setCollpase] = useState(false);
+  const [collapse, setCollpase] = useState(true);
 
   return (
     <main className="h-screen w-screen overflow-hidden bg-[#D6CFC8]">
