@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 import Card from "../../components/resources/Card";
 import { BiStreetView, BiTrafficCone } from "react-icons/bi";
@@ -68,6 +69,15 @@ export default function Resources() {
               ]}
               icon={<BiStreetView className="text-2xl" />}
             />
+          </div>
+
+          <div className="mt-5 flex justify-center" data-jos_animation="fade">
+            <Link
+              to="#"
+              className="button rounded-[50px] border-2 border-black bg-black py-4 text-white after:bg-colorOrangyRed hover:border-colorOrangyRed hover:text-white"
+            >
+              Request
+            </Link>
           </div>
         </div>
       </div>

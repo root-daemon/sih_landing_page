@@ -60,12 +60,12 @@ export default function Card({
             <Select
               onValueChange={(value) => handleSelectChange("skilled", value)}
             >
-              <SelectTrigger className="w-[180px]">
+              <SelectTrigger className="w-[180px] text-left">
                 <SelectValue placeholder={name1} />
               </SelectTrigger>
               <SelectContent>
                 <SelectGroup>
-                  <SelectLabel>{name1}</SelectLabel>
+                  <SelectLabel className="capitalize">{name1}</SelectLabel>
                   {skilled.map((employ) => (
                     <SelectItem key={employ.name} value={employ.name}>
                       {employ.name}
