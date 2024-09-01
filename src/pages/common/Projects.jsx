@@ -1,4 +1,3 @@
-
 import Sidebar from "../../components/sidebar/sidebar";
 import {
   Table,
@@ -10,6 +9,7 @@ import {
 } from "../../components/ui/table";
 import PageHeader from "../../components/PageHeader";
 import { useNavigate } from "react-router-dom";
+import { useEffect, useState } from "react";
 //s.no
 //description
 //depts (created by)
@@ -60,7 +60,16 @@ const invoices = [
 
 export default function Projects() {
   const navigate = useNavigate();
+  const [projects, setProjects] = useState([]);
 
+  useEffect(() => {
+    fetch("http://localhost:8000/projects")
+      .then((res) => res.json())
+      .then((data) => {
+        setProjects(data);
+      });
+  }, []);
+  
   return (
     <main className="h-screen w-screen overflow-hidden bg-[#D6CFC8]">
       <PageHeader />
@@ -80,7 +89,7 @@ export default function Projects() {
               </TableRow>
             </TableHeader>
             <TableBody>
-              {invoices.map((project, index) => (
+              {projects.map((project, index) => (
                 <TableRow
                   className="cursor-pointer"
                   onClick={() => navigate("/board")}
@@ -90,7 +99,7 @@ export default function Projects() {
                   <TableCell>{project.title}</TableCell>
                   <TableCell>{project.location}</TableCell>
                   <TableCell>{project.description}</TableCell>
-                  <TableCell>{project.despartment}</TableCell>
+                  <TableCell>{project.department}</TableCell>
                   <TableCell>{project.departments.join(", ")}</TableCell>
                 </TableRow>
               ))}

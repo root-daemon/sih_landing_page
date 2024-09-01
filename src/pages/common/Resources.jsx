@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import Card from "../../components/Card";
+import Card from "../../components/resources/Card";
 import { BiStreetView, BiTrafficCone } from "react-icons/bi";
 import { TbLayoutSidebarRightCollapse } from "react-icons/tb";
 import Notification from "../../components/Notification";
@@ -18,7 +18,7 @@ export default function Resources() {
           <Logo />
         </div>
         <div className="absolute left-96 top-7 flex items-center justify-center gap-3 text-sm font-medium">
-          <span className="cursor-pointer">Departments</span>
+          <span className="cursor-pointer">Resources</span>
         </div>
         <div
           onClick={() => setNotification(!notification)}
@@ -36,29 +36,18 @@ export default function Resources() {
           <h1 className="max-w-[800px] text-5xl font-semibold">Resource</h1>
           <div className="mt-6 grid grid-cols-cards gap-5">
             <Card
-              title="Traffic and Transport"
-              tasks={[
-                { name: "Road 51, Maha Nagar" },
-                { name: "Maintainance work" },
-                { name: "Road tarring" },
+              department="Plumbing Department"
+              skilled={[
+                { name: "Electrical Engineer", qty: 12 },
+                { name: "Civil Engineer", qty: 123 },
+                { name: "Contractor", qty: 123 },
               ]}
-              status={{
-                completed: 2,
-                pending: 8,
-              }}
-              icon={<BiTrafficCone className="text-2xl" />}
-            />
-            <Card
-              title="Plubming Department"
-              tasks={[
-                { name: "Monthly Sewage Maintainance" },
-                { name: "Manholes" },
-                { name: "F4 Restrooms" },
+              unskilled={[
+                { name: "Customer Service", qty: 12 },
+                { name: "Support Staffs", qty: 24 },
+                { name: "Clerical", qty: 24 },
+                { name: "Novice", qty: 53 },
               ]}
-              status={{
-                completed: 4,
-                pending: 5,
-              }}
               icon={<BiStreetView className="text-2xl" />}
             />
           </div>
