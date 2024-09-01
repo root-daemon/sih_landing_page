@@ -93,7 +93,7 @@ export default function Projects() {
         <div className="h-[92.5vh] w-full overflow-auto rounded-tl-3xl bg-gradient-to-br from-[#EFEAE4] to-[#e3d3c7df] p-12">
           <h1 className="py-4 text-5xl font-semibold">Projects</h1>
           <Table>
-            <TableHeader>
+            <TableHeader className="rounded-md bg-[#bdb6b18f] text-center font-semibold text-[#434140]">
               <TableRow>
                 <TableHead>S.No</TableHead>
                 <TableHead>Name</TableHead>
